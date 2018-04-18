@@ -1,0 +1,35 @@
+{
+  "name": "tslint-config-alloy",
+  "version": "0.0.0",
+  "description": "AlloyTeam TSLint 规则",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlloyTeam/tslint-config-alloy.git"
+  },
+  "keywords": [
+    "tslint",
+    "tslintrc",
+    "tslintconfig",
+    "config",
+    "alloy",
+    "alloyteam",
+    "javascript",
+    "typescript",
+    "styleguide",
+    "react",
+    "vue"
+  ],
+  "author": "xcatliu <xcatliu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlloyTeam/tslint-config-alloy/issues"
+  },
+  "homepage": "https://github.com/AlloyTeam/tslint-config-alloy#readme",
+  "devDependencies": {
+    "@types/node": "^9.6.1"
+  }
+}
