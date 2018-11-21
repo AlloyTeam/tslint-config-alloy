@@ -1,0 +1,7 @@
+{
+    "files.eol": "\n",
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "tslint.ignoreDefinitionFiles": false,
+    "tslint.autoFixOnSave": true
+}
