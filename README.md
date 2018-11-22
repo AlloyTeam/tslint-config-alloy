@@ -1,6 +1,6 @@
 # AlloyTeam TSLint 规则
 
-与 AlloyTeam ESLint 规则类似，我们仔细研读了 TSLint 所有的配置项，定制出了心目中的「完美」TSLint 配置。
+与 [AlloyTeam ESLint 规则](https://github.com/AlloyTeam/eslint-config-alloy)类似，我们仔细研读了 TSLint 所有的配置项，定制出了心目中的「完美」TSLint 配置。
 
 具体规则和相应解释请看[源码](https://github.com/AlloyTeam/tslint-config-alloy/blob/master/index.js)。
 
@@ -14,7 +14,7 @@ npm install --save-dev tslint typescript tslint-config-alloy
 
 在你的项目根目录下创建 `tslint.json`，并将以下内容复制到文件中：
 
-```json
+```
 {
     "extends": ["tslint-config-alloy"],
     "linterOptions": {
@@ -62,7 +62,7 @@ npm install --save-dev prettier tslint-config-prettier
 
 然后为 `tslint.config` 的 `extends` 添加 `tslint-config-prettier` 即可：
 
-```json
+```
 {
     "extends": ["tslint-config-alloy", "tslint-config-prettier"],
     "linterOptions": {
