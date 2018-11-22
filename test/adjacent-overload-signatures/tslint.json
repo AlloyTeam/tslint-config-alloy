@@ -1,0 +1,9 @@
+{
+    "rules": {
+        "adjacent-overload-signatures": true
+    },
+    "meta": {
+        "description": "定义函数时如果用到了覆写，则必须将覆写的函数写到一起",
+        "ts-only": true
+    }
+}

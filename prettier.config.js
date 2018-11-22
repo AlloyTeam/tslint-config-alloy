@@ -1,7 +1,7 @@
 // prettier.config.js or .prettierrc.js
 module.exports = {
-    // 一行最多 160 字符
-    printWidth: 160,
+    // 一行最多 80 字符
+    printWidth: 80,
     // 使用 4 个空格缩进
     tabWidth: 4,
     // 不使用缩进符，而使用空格
@@ -12,8 +12,8 @@ module.exports = {
     singleQuote: true,
     // jsx 不使用单引号，而使用双引号
     jsxSingleQuote: false,
-    // 末尾需要逗号
-    trailingComma: 'all',
+    // 末尾不需要逗号
+    trailingComma: 'none',
     // 大括号内的首尾需要空格
     bracketSpacing: true,
     // jsx 标签的反尖括号需要换行
