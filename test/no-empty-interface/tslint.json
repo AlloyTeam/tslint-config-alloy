@@ -1,10 +1,10 @@
 {
     "rules": {
-        "adjacent-overload-signatures": true
+        "no-empty-interface": true
     },
     "meta": {
         "category": "typescript-specific",
-        "description": "重载的函数必须写在一起",
+        "description": "禁止定义接口空的接口",
         "ts-only": true
     }
 }

@@ -2,6 +2,7 @@
     "compilerOptions": {
         "strict": true,
         "noUnusedLocals": true,
-        "noUnusedParameters": true
+        "noUnusedParameters": true,
+        "target": "es2018"
     }
 }

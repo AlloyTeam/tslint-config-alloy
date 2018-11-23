@@ -1,0 +1,9 @@
+{
+    "rules": {
+        "no-parameter-reassignment": true
+    },
+    "meta": {
+        "category": "typescript-specific",
+        "description": "禁止对函数的参数重新赋值"
+    }
+}

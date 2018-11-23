@@ -1,18 +1,18 @@
-declare namespace Foo1 {
+declare namespace NSFoo1 {
     export function foo(s: string): void;
     export function foo(n: number): void;
     export function bar(): void;
     export function foo(sn: string | number): void;
 }
 
-type Foo2 = {
+type TypeFoo1 = {
     foo(s: string): void;
     foo(n: number): void;
     bar(): void;
     foo(sn: string | number): void;
 };
 
-interface Foo3 {
+interface IFoo1 {
     foo(s: string): void;
     foo(n: number): void;
     bar(): void;

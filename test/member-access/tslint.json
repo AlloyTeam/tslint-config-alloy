@@ -1,0 +1,17 @@
+{
+    "rules": {
+        "member-access": [
+            true,
+            "check-accessor",
+            "check-constructor",
+            "check-parameter-property"
+        ]
+    },
+    "meta": {
+        "category": "typescript-specific",
+        "description": "必须指定类的成员的可访问性",
+        "ts-only": true,
+        "fixable": true,
+        "reason": "将不需要公开的成员设为私有的，可以增强代码的可理解性，对文档输出也很友好"
+    }
+}

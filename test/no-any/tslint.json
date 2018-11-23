@@ -1,0 +1,11 @@
+{
+    "rules": {
+        "no-any": false
+    },
+    "meta": {
+        "category": "typescript-specific",
+        "description": "禁止使用 any",
+        "ts-only": true,
+        "reason": "太严格了"
+    }
+}

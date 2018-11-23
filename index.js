@@ -35,8 +35,8 @@ module.exports = {
         'member-ordering': [
             true,
             {
-                order: 'fields-first',
-            },
+                order: 'fields-first'
+            }
         ],
         // 禁止使用 any
         // @ts-only 仅支持 ts 文件
@@ -47,19 +47,41 @@ module.exports = {
         // 禁止导入立即执行的模块
         // @off 太严格了
         'no-import-side-effect': false,
-        // 禁止给一个初始化时即可自动推论出类型（number, string, boolean）的变量显式的指定类型
+        // 禁止给一个初始化时直接赋值为 number, string 或 boolean 的变量显式的指定类型
         // @off 没必要禁止
         // @ts-only 仅支持 ts 文件
         // @fixable 支持自动修复
-        'no-inferrable-types': false,
+        'no-inferrable-types': true,
         // 禁止使用 module 来定义命名空间
         // module 是已废弃的关键字
         // @ts-only 仅支持 ts 文件
         // @fixable 支持自动修复
+        // @prettier 可交由 prettier 控制
         'no-internal-module': true,
         // 禁止使用魔法数字
         // 允许使用一部分魔法数字
-        'no-magic-numbers': [true, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 50, 100, 200, 300, 400, 500, 1000],
+        'no-magic-numbers': [
+            true,
+            -1,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            50,
+            100,
+            200,
+            300,
+            400,
+            500,
+            1000
+        ],
         // 禁止使用 namespace 来定义命名空间
         // 使用 es6 引入外部模块，才是更加标准的方式。允许使用 declare namespace ... {} 来定义外部 APIs
         // @ts-only 仅支持 ts 文件
@@ -82,7 +104,11 @@ module.exports = {
         // @ts-only 仅支持 ts 文件
         'no-var-requires': false,
         // 必须使用箭头函数，除非是单独的函数声明或是命名函数
-        'only-arrow-functions': [true, 'allow-declarations', 'allow-named-functions'],
+        'only-arrow-functions': [
+            true,
+            'allow-declarations',
+            'allow-named-functions'
+        ],
         // 必须使用 for of 循环替代 for 循环
         'prefer-for-of': true,
         // async 函数的返回值必须是 promise
@@ -104,15 +130,15 @@ module.exports = {
                 'index-signature': 'nospace',
                 parameter: 'nospace',
                 'property-declaration': 'nospace',
-                'variable-declaration': 'nospace',
+                'variable-declaration': 'nospace'
             },
             {
                 'call-signature': 'onespace',
                 'index-signature': 'onespace',
                 parameter: 'onespace',
                 'property-declaration': 'onespace',
-                'variable-declaration': 'onespace',
-            },
+                'variable-declaration': 'onespace'
+            }
         ],
         // 函数覆写时，若能通过联合类型将两个函数的类型声明合为一个，则使用联合类型而不是两个函数声明
         'unified-signatures': true,
@@ -180,7 +206,7 @@ module.exports = {
         // @requires-type-info 需要提供类型信息
         'no-for-in-array': true,
         // 禁止引入 package.json 中不存在的模块
-        'no-implicit-dependencies': true,
+        'no-implicit-dependencies': [true, 'dev'],
         // 禁止推论出的类型是空对象类型
         // @ts-only 仅支持 ts 文件
         // @requires-type-info 需要提供类型信息
@@ -224,8 +250,8 @@ module.exports = {
         'no-this-assignment': [
             true,
             {
-                'allow-destructuring': true,
-            },
+                'allow-destructuring': true
+            }
         ],
         // 使用实例的方法时，必须 bind 到实例上
         // @ts-only 仅支持 ts 文件
@@ -354,8 +380,8 @@ module.exports = {
             true,
             {
                 multiline: 'always',
-                singleline: 'never',
-            },
+                singleline: 'never'
+            }
         ],
 
         //
@@ -391,7 +417,7 @@ module.exports = {
         'class-name': true,
         // 限制单行注释的规则
         // @fixable 支持自动修复
-        'comment-format': [true, 'check-space', 'check-uppercase'],
+        'comment-format': [true, 'check-space'],
         // 类、枚举类型、函数必须写注释
         // @requires-type-info 需要提供类型信息
         'completed-docs': [true, 'classes', 'enums', 'functions'],
@@ -515,7 +541,13 @@ module.exports = {
         // 必须使用单引号，jsx 中必须使用双引号
         // @fixable 支持自动修复
         // @prettier 可交由 prettier 控制
-        quotemark: [true, 'single', 'jsx-double', 'avoid-template', 'avoid-escape'],
+        quotemark: [
+            true,
+            'single',
+            'jsx-double',
+            'avoid-template',
+            'avoid-escape'
+        ],
         // 使用 return; 而不是 return undefined;
         // @requires-type-info 需要提供类型信息
         'return-undefined': true,
@@ -555,7 +587,7 @@ module.exports = {
             'check-type',
             'check-typecast',
             'check-type-operator',
-            'check-preblock',
-        ],
-    },
+            'check-preblock'
+        ]
+    }
 };

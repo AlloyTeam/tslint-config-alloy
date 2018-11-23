@@ -1,0 +1,15 @@
+{
+    "rules": {
+        "no-import-side-effect": [
+            true,
+            {
+                "ignore-module": "(\\.css|\\.less|\\.sass|\\.scss)$"
+            }
+        ]
+    },
+    "meta": {
+        "category": "typescript-specific",
+        "description": "禁止导入立即执行的模块，除了 `css`, `less`, `sass`, `scss`",
+        "reason": "立即执行的模块无法控制其执行过程"
+    }
+}

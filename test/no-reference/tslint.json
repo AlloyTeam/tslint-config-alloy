@@ -1,0 +1,10 @@
+{
+    "rules": {
+        "no-reference": true
+    },
+    "meta": {
+        "category": "typescript-specific",
+        "description": "禁止使用三斜线引入模块 `/// <reference path=\"foo\" />`",
+        "reason": "引入模块时应使用更先进的 `import` 语法\n三斜线仅能用于引入一个类型文件 `/// <reference types=\"foo\" />`"
+    }
+}

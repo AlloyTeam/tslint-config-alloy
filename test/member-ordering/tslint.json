@@ -1,0 +1,32 @@
+{
+    "rules": {
+        "member-ordering": [
+            true,
+            {
+                "order": [
+                    "public-static-field",
+                    "protected-static-field",
+                    "private-static-field",
+                    "public-static-method",
+                    "protected-static-method",
+                    "private-static-method",
+                    "public-instance-field",
+                    "protected-instance-field",
+                    "private-instance-field",
+                    "public-constructor",
+                    "protected-constructor",
+                    "private-constructor",
+                    "public-instance-method",
+                    "protected-instance-method",
+                    "private-instance-method"
+                ]
+            }
+        ]
+    },
+    "meta": {
+        "category": "typescript-specific",
+        "description": "指定类成员的排序规则",
+        "fixable": true,
+        "reason": "优先级：\n1. static > instance\n2. field > constructor > method\n3. public > protected > private"
+    }
+}
