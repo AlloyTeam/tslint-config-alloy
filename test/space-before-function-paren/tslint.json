@@ -8,7 +8,7 @@
     "meta": {
         "category": "style",
         "description": "函数名前必须有空格",
-        "fixable": true,
+        "has-fixer": true,
         "prettier": true
     }
 }

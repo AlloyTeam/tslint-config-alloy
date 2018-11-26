@@ -5,7 +5,7 @@
     "meta": {
         "category": "style",
         "description": "禁止行尾有空格",
-        "fixable": true,
+        "has-fixer": true,
         "prettier": true
     }
 }

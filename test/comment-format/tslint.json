@@ -8,6 +8,6 @@
     "meta": {
         "category": "style",
         "description": "限制单行注释的规则",
-        "fixable": true
+        "has-fixer": true
     }
 }

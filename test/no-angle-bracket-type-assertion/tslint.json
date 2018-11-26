@@ -7,6 +7,6 @@
         "description": "类型断言必须使用 `as Type`，禁止使用 `<Type>`",
         "reason": "`<Type>` 容易被理解为 jsx",
         "ts-only": true,
-        "fixable": true
+        "has-fixer": true
     }
 }

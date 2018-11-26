@@ -27,6 +27,6 @@
         "category": "typescript-specific",
         "description": "指定类成员的排序规则",
         "reason": "优先级：\n1. `static` > `instance`\n2. `field` > `constructor` > `method`\n3. `public` > `protected` > `private`",
-        "fixable": true
+        "has-fixer": true
     }
 }

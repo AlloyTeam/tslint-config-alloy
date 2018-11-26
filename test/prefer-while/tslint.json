@@ -6,6 +6,6 @@
         "category": "style",
         "description": "当没有初始值的时候，必须使用 `while` 而不是 `for`",
         "reason": "没必要限制",
-        "fixable": true
+        "has-fixer": true
     }
 }

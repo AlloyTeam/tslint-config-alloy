@@ -5,6 +5,6 @@
     "meta": {
         "category": "style",
         "description": "必须使用 `a = {b}` 而不是 `a = {b: b}`",
-        "fixable": true
+        "has-fixer": true
     }
 }

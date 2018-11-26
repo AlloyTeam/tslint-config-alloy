@@ -24,7 +24,7 @@ npm install --save-dev tslint typescript tslint-config-alloy
         // 这里填入你的项目需要的个性化配置，比如：
         //
         // // 一个缩进必须用两个空格替代
-        // // @fixable 可自动修复
+        // // @has-fixer 可自动修复
         // // @prettier 可交由 prettier 控制
         // "indent": [true, "spaces", 2]
     }
@@ -72,7 +72,7 @@ npm install --save-dev prettier tslint-config-prettier
         // 这里填入你的项目需要的个性化配置，比如：
         //
         // // 一个缩进必须用两个空格替代
-        // // @fixable 可自动修复
+        // // @has-fixer 可自动修复
         // // @prettier 可交由 prettier 控制
         // "indent": [true, "spaces", 2]
     }

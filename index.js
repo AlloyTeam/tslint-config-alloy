@@ -8,7 +8,7 @@
  *
  * @off 表示禁用此规则，并给出相应解释
  * @ts-only 表示此规则仅支持 ts 文件
- * @fixable 表示此规则支持自动修复
+ * @has-fixer 表示此规则支持自动修复
  * @requires-type-info 表示使用此规则需要提供类型信息
  * @prettier 表示此规则可交由 prettier 控制
  */
@@ -28,10 +28,10 @@ module.exports = {
         'ban-types': false,
         // 必须指定类的成员的可访问性
         // @ts-only 仅支持 ts 文件
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         'member-access': true,
         // 指定类成员的排序规则
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         'member-ordering': [
             true,
             {
@@ -50,12 +50,12 @@ module.exports = {
         // 禁止给一个初始化时直接赋值为 number, string 或 boolean 的变量显式的指定类型
         // @off 没必要禁止
         // @ts-only 仅支持 ts 文件
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         'no-inferrable-types': true,
         // 禁止使用 module 来定义命名空间
         // module 是已废弃的关键字
         // @ts-only 仅支持 ts 文件
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         'no-internal-module': true,
         // 禁止使用魔法数字
         // 允许使用一部分魔法数字
@@ -95,7 +95,7 @@ module.exports = {
         'no-reference': true,
         // 禁止无用的类型断言
         // @ts-only 仅支持 ts 文件
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         // @requires-type-info 需要提供类型信息
         'no-unnecessary-type-assertion': true,
         // 禁止使用 var b = require('b'); 来引入模块
@@ -120,7 +120,7 @@ module.exports = {
         typedef: false,
         // 类型定义的冒号前面必须没有空格，后面必须有一个空格
         // @ts-only 仅支持 ts 文件
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         // @prettier 可交由 prettier 控制
         'typedef-whitespace': [
             true,
@@ -160,7 +160,7 @@ module.exports = {
         ban: false,
         // if 后面必须有 {，除非是单行 if
         // @category functionality
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         curly: [true, 'ignore-same-line'],
         // for in 内部必须有 hasOwnProperty
         // @category functionality
@@ -245,7 +245,7 @@ module.exports = {
         // 禁止使用 null
         // @category functionality
         // @off 没必要限制
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         'no-null-keyword': false,
         // 禁止对对象字面量进行类型断言（断言成 any 是允许的）
         // @category functionality
@@ -254,7 +254,7 @@ module.exports = {
         // 禁止没必要的 return await
         // @category functionality
         // @off return await 用起来没问题
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         'no-return-await': false,
         // 禁止变量名与上层作用域内的定义过的变量重复
         // @category functionality
@@ -265,11 +265,11 @@ module.exports = {
         'no-sparse-arrays': true,
         // 禁止出现 foo['bar']，必须写成 foo.bar
         // @category functionality
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         'no-string-literal': true,
         // 禁止 throw 字符串，必须 throw 一个 Error 对象
         // @category functionality
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         'no-string-throw': true,
         // 禁止 import 模块的子文件
         // @category functionality
@@ -314,7 +314,7 @@ module.exports = {
         'no-use-before-declare': true,
         // 禁止使用 var
         // @category functionality
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         'no-var-keyword': true,
         // 禁止返回值为 void 类型
         // @category functionality
@@ -328,7 +328,7 @@ module.exports = {
         // 使用 { ...foo, bar: 1 } 代替 Object.assign({}, foo, { bar: 1 })
         // 前者的类型检查更完善
         // @category functionality
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         'prefer-object-spread': true,
         // parseInt 必须传入第二个参数
         // @category functionality
@@ -383,18 +383,18 @@ module.exports = {
         deprecation: true,
         // 文件最后一行必须有一个空行
         // @category maintainability
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         // @prettier 可交由 prettier 控制
         eofline: true,
         // 一个缩进必须用四个空格替代
         // @category maintainability
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         // @prettier 可交由 prettier 控制
         indent: [true, 'spaces', 4],
         // 限制换行符为 LF 或 CRLF
         // @category maintainability
         // @off 没必要限制
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         // @prettier 可交由 prettier 控制
         'linebreak-style': [true, 'LF'],
         // 限制每个文件的类的数量
@@ -432,7 +432,7 @@ module.exports = {
         // 申明后不再被修改的变量必须使用 const 来申明
         // @category maintainability
         // @off 没必要强制要求
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         'prefer-const': false,
         // 如果私有变量只在构造函数中被赋值，则必须使用 readonly 修饰符
         // @category maintainability
@@ -442,7 +442,7 @@ module.exports = {
         'prefer-readonly': false,
         // 限制对象、数组、解构赋值等的最后一项末尾是否需要逗号
         // @category maintainability
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         // @prettier 可交由 prettier 控制
         'trailing-comma': [
             true,
@@ -460,23 +460,23 @@ module.exports = {
         // 变量定义需要竖向对其
         // @category style
         // @off 没必要限制
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         // @prettier 可交由 prettier 控制
         align: false,
         // 限制必须使用 T[] 或 Array<T> 之中的一种来定义数组的类型
         // @category style
         // @off 没必要限制
         // @ts-only 仅支持 ts 文件
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         'array-type': false,
         // 箭头函数的参数必须有小括号
         // @category style
         // @prettier 可交由 prettier 控制
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         'arrow-parens': true,
         // 箭头函数的函数体只有 return 语句的时候，必须简写
         // @category style
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         'arrow-return-shorthand': true,
         // 数字字面量必须在加号的右边，即禁止 1 + x
         // @category style
@@ -485,14 +485,14 @@ module.exports = {
         // 可以简写为函数类型的接口或字面类似，必须简写
         // @category style
         // @ts-only 仅支持 ts 文件
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         'callable-types': true,
         // 类名与接口名必须为驼峰式
         // @category style
         'class-name': true,
         // 限制单行注释的规则
         // @category style
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         'comment-format': [true, 'check-space'],
         // 类、枚举类型、函数必须写注释
         // @category style
@@ -504,7 +504,7 @@ module.exports = {
         // 文件的开头必须有指定的字符串
         // @category style
         // @off 太严格了
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         'file-header': false,
         // 约束文件命名规范
         // @category style
@@ -523,7 +523,7 @@ module.exports = {
         // 接口可以 implement extend 和 merge
         // @category style
         // @ts-only 仅支持 ts 文件
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         'interface-over-type-literal': true,
         // 注释必须符合 JSDoc 规范
         'jsdoc-format': [true, 'check-multiline-start'],
@@ -548,23 +548,23 @@ module.exports = {
         // <Type> 容易被理解为 jsx
         // @category style
         // @ts-only 仅支持 ts 文件
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         'no-angle-bracket-type-assertion': true,
         // 禁止变量与 true 或 false 比较
         // @category style
         // @off 没必要限制
         // @ts-only 仅支持 ts 文件
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         // @requires-type-info 需要提供类型信息
         'no-boolean-literal-compare': false,
         // 禁止连续超过三行空行
         // @category style
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         // @prettier 可交由 prettier 控制
         'no-consecutive-blank-lines': [true, 3],
         // 禁止使用特殊空白符（比如全角空格）
         // @category style
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         // @prettier 可交由 prettier 控制
         'no-irregular-whitespace': true,
         // 禁止给类的构造函数的参数添加修饰符
@@ -581,7 +581,7 @@ module.exports = {
         'no-reference-import': true,
         // 禁止行尾有空格
         // @category style
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         // @prettier 可交由 prettier 控制
         'no-trailing-whitespace': true,
         // 禁止没必要的函数调用，如 x => f(x) 应该简写为 f
@@ -590,13 +590,13 @@ module.exports = {
         'no-unnecessary-callback-wrapper': false,
         // 禁止变量定义时赋值为 undefined
         // @category style
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         'no-unnecessary-initializer': true,
         // 在命名空间中，可以直接使用内部变量，不需要添加命名空间前缀
         // @category style
         // @off 已经禁止使用命名空间了
         // @ts-only 仅支持 ts 文件
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         // @requires-type-info 需要提供类型信息
         'no-unnecessary-qualifier': false,
         // 小数必须以 0. 开头，禁止以 . 开头，并且不能以 0 结尾
@@ -606,16 +606,16 @@ module.exports = {
         // 对象的 key 必须用引号包起来
         // @category style
         // @off 没必要限制
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         // @prettier 可交由 prettier 控制
         'object-literal-key-quotes': false,
         // 必须使用 a = {b} 而不是 a = {b: b}
         // @category style
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         'object-literal-shorthand': true,
         // if 后的 { 禁止换行
         // @category style
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         // @prettier 可交由 prettier 控制
         'one-line': true,
         // 变量申明必须每行一个，for 循环的初始条件中除外
@@ -623,7 +623,7 @@ module.exports = {
         'one-variable-per-declaration': [true, 'ignore-for-loop'],
         // import 必须排序
         // @category style
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         'ordered-imports': true,
         // 类中没有使用 this 的方法应该提取成类外的函数
         // @category style
@@ -632,7 +632,7 @@ module.exports = {
         // 必须使用 foo(): void 而不是 foo: () => void
         // @category style
         // @off 没必要限制
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         'prefer-method-signature': false,
         // 当 if 中只有 === 时，必须使用 switch 替换 if
         // @category style
@@ -645,11 +645,11 @@ module.exports = {
         // 当没有初始值的时候，必须使用 while 而不是 for
         // @category style
         // @off 没必要限制
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         'prefer-while': false,
         // 必须使用单引号，jsx 中必须使用双引号
         // @category style
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         // @prettier 可交由 prettier 控制
         quotemark: [
             true,
@@ -664,23 +664,23 @@ module.exports = {
         'return-undefined': true,
         // 行尾必须有分号
         // @category style
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         // @prettier 可交由 prettier 控制
         semicolon: [true, 'always'],
         // 函数名前必须有空格
         // @category style
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         // @prettier 可交由 prettier 控制
         'space-before-function-paren': [true, 'asyncArrow'],
         // 括号内首尾禁止有空格
         // @category style
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         // @prettier 可交由 prettier 控制
         'space-within-parens': [true, 0],
         // switch 的最后一项禁止有 break
         // @category style
         // @off 没必要限制
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         'switch-final-break': false,
         // 字面类型的每个成员都必须有分号
         // @category style
@@ -692,7 +692,7 @@ module.exports = {
         'variable-name': false,
         // 限制空格的位置
         // @category style
-        // @fixable 支持自动修复
+        // @has-fixer 支持自动修复
         // @prettier 可交由 prettier 控制
         whitespace: [
             true,

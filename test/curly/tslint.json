@@ -5,6 +5,6 @@
     "meta": {
         "category": "functionality",
         "description": "`if` 后面必须有 `{`，除非是单行 `if`",
-        "fixable": true
+        "has-fixer": true
     }
 }

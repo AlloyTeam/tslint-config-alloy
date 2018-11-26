@@ -9,7 +9,7 @@
         "category": "maintainability",
         "description": "限制换行符为 LF 或 CRLF",
         "reason": "没必要限制",
-        "fixable": true,
+        "has-fixer": true,
         "prettier": true
     }
 }

@@ -5,7 +5,7 @@
     "meta": {
         "category": "style",
         "description": "箭头函数的参数必须有小括号",
-        "fixable": true,
+        "has-fixer": true,
         "prettier": true
     }
 }

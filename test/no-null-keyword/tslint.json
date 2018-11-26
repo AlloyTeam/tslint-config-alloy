@@ -6,6 +6,6 @@
         "category": "functionality",
         "description": "禁止使用 `null`",
         "reason": "没必要限制",
-        "fixable": true
+        "has-fixer": true
     }
 }

@@ -11,7 +11,7 @@
     "meta": {
         "category": "maintainability",
         "description": "限制对象、数组、解构赋值等的最后一项末尾是否需要逗号",
-        "fixable": true,
+        "has-fixer": true,
         "prettier": true
     }
 }

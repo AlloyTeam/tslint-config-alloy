@@ -6,6 +6,6 @@
         "category": "functionality",
         "description": "禁止没必要的 `return await`",
         "reason": "`return await` 用起来没问题",
-        "fixable": true
+        "has-fixer": true
     }
 }

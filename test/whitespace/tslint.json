@@ -17,7 +17,7 @@
     "meta": {
         "category": "style",
         "description": "限制空格的位置",
-        "fixable": true,
+        "has-fixer": true,
         "prettier": true
     }
 }

@@ -5,7 +5,7 @@
     "meta": {
         "category": "style",
         "description": "`if` 后的 `{` 禁止换行",
-        "fixable": true,
+        "has-fixer": true,
         "prettier": true
     }
 }

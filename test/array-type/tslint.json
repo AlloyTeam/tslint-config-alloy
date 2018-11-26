@@ -7,6 +7,6 @@
         "description": "限制必须使用 `T[]` 或 `Array<T>` 之中的一种来定义数组的类型",
         "reason": "没必要限制",
         "ts-only": true,
-        "fixable": true
+        "has-fixer": true
     }
 }

@@ -8,7 +8,7 @@
     "meta": {
         "category": "style",
         "description": "禁止连续超过三行空行",
-        "fixable": true,
+        "has-fixer": true,
         "prettier": true
     }
 }
