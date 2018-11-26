@@ -1,0 +1,9 @@
+{
+    "rules": {
+        "ban-comma-operator": true
+    },
+    "meta": {
+        "category": "functionality",
+        "description": "禁止使用逗号操作符"
+    }
+}

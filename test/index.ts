@@ -20,9 +20,18 @@ describe('TSLint rules', () => {
             // bad.ts 存在时才会执行测试
             if (fs.existsSync(badFilepath)) {
                 it('should have lint error for bad.ts', () => {
-                    const linter = new Linter({
-                        fix: false
-                    });
+                    const linter = new Linter(
+                        {
+                            fix: false
+                        }
+                        // 传入这个参数相当于 --project 运行
+                        // Linter.createProgram(
+                        //     path.resolve(
+                        //         __dirname,
+                        //         `./${ruleName}/tsconfig.json`
+                        //     )
+                        // )
+                    );
                     // 执行 TSLint
                     linter.lint(
                         badFilepath,
@@ -49,9 +58,18 @@ describe('TSLint rules', () => {
             // good.ts 存在时才会执行测试
             if (fs.existsSync(goodFilepath)) {
                 it('should pass the lint for good.ts', () => {
-                    const linter = new Linter({
-                        fix: false
-                    });
+                    const linter = new Linter(
+                        {
+                            fix: false
+                        }
+                        // 传入这个参数相当于 --project 运行
+                        // Linter.createProgram(
+                        //     path.resolve(
+                        //         __dirname,
+                        //         `./${ruleName}/tsconfig.json`
+                        //     )
+                        // )
+                    );
                     // 执行 TSLint
                     linter.lint(
                         goodFilepath,

@@ -1,0 +1,12 @@
+{
+    "rules": {
+        "await-promise": false
+    },
+    "meta": {
+        "category": "functionality",
+        "description": "await 必须接受 Promise",
+        "ts-only": true,
+        "requires-type-info": true,
+        "reason": "promise-function-async 里已经允许 async 函数返回值为非 Promise 了，故也应该允许 await 接受非 Promise"
+    }
+}

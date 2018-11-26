@@ -1,0 +1,14 @@
+{
+    "rules": {
+        "only-arrow-functions": [
+            true,
+            "allow-declarations",
+            "allow-named-functions"
+        ]
+    },
+    "meta": {
+        "category": "typescript-specific",
+        "description": "必须使用箭头函数，除非是单独的函数声明或是命名函数",
+        "reason": "统一使用箭头函数，避免 this 指向问题"
+    }
+}
