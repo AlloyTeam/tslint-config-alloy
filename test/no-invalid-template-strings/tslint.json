@@ -3,7 +3,7 @@
         "no-invalid-template-strings": true
     },
     "meta": {
-        "description": "禁止在非模版字符串中出现 ${}",
-        "category": "functionality"
+        "category": "functionality",
+        "description": "禁止在非模版字符串中出现 `${}`"
     }
 }

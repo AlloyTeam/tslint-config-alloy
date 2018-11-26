@@ -3,7 +3,7 @@
         "no-duplicate-super": true
     },
     "meta": {
-        "description": "禁止 super 在一个构造函数中出现两次",
-        "category": "functionality"
+        "category": "functionality",
+        "description": "禁止 `super` 在一个构造函数中出现两次"
     }
 }

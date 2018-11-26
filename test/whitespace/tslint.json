@@ -15,8 +15,8 @@
         ]
     },
     "meta": {
-        "description": "限制空格的位置",
         "category": "style",
+        "description": "限制空格的位置",
         "fixable": true,
         "prettier": true
     }

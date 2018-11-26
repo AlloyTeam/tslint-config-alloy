@@ -3,8 +3,8 @@
         "no-null-keyword": false
     },
     "meta": {
-        "description": "禁止使用 null",
         "category": "functionality",
+        "description": "禁止使用 `null`",
         "reason": "没必要限制",
         "fixable": true
     }

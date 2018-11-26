@@ -3,8 +3,8 @@
         "no-reference-import": true
     },
     "meta": {
-        "description": "如果已经引入过库，则禁止使用三斜杠引入类型定义文件",
         "category": "style",
+        "description": "如果已经引入过库，则禁止使用三斜杠引入类型定义文件",
         "ts-only": true
     }
 }

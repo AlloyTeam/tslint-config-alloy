@@ -1,13 +1,9 @@
 {
     "rules": {
-        "no-empty": [
-            true,
-            "allow-empty-catch",
-            "allow-empty-functions"
-        ]
+        "no-empty": [true, "allow-empty-catch", "allow-empty-functions"]
     },
     "meta": {
-        "description": "禁止出现空代码块，允许 catch 是空代码块",
-        "category": "functionality"
+        "category": "functionality",
+        "description": "禁止出现空代码块，允许 `catch` 是空代码块"
     }
 }

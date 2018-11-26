@@ -3,9 +3,9 @@
         "no-angle-bracket-type-assertion": true
     },
     "meta": {
-        "description": "类型断言必须使用 as Type，禁止使用 <Type>",
-        "reason": "<Type> 容易被理解为 jsx",
         "category": "style",
+        "description": "类型断言必须使用 `as Type`，禁止使用 `<Type>`",
+        "reason": "`<Type>` 容易被理解为 jsx",
         "ts-only": true,
         "fixable": true
     }

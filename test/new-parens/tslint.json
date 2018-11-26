@@ -3,8 +3,8 @@
         "new-parens": true
     },
     "meta": {
-        "description": "new 后面只必须有一个空格",
         "category": "style",
+        "description": "`new` 后面只必须有一个空格",
         "prettier": true
     }
 }

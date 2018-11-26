@@ -3,8 +3,8 @@
         "ordered-imports": true
     },
     "meta": {
-        "description": "import 必须排序",
         "category": "style",
+        "description": "`import` 必须排序",
         "fixable": true
     }
 }

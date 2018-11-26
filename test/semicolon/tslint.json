@@ -6,8 +6,8 @@
         ]
     },
     "meta": {
-        "description": "行尾必须有分号",
         "category": "style",
+        "description": "行尾必须有分号",
         "fixable": true,
         "prettier": true
     }

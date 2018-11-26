@@ -4,8 +4,8 @@
     },
     "meta": {
         "category": "typescript-specific",
-        "description": "禁止使用 any",
-        "ts-only": true,
-        "reason": "太严格了"
+        "description": "禁止使用 `any`",
+        "reason": "太严格了",
+        "ts-only": true
     }
 }

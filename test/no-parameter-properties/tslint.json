@@ -3,8 +3,8 @@
         "no-parameter-properties": true
     },
     "meta": {
-        "description": "禁止给类的构造函数的参数添加修饰符",
         "category": "style",
+        "description": "禁止给类的构造函数的参数添加修饰符",
         "ts-only": true
     }
 }

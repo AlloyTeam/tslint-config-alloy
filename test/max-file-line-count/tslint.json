@@ -3,8 +3,8 @@
         "max-file-line-count": false
     },
     "meta": {
-        "description": "限制每个文件的行数",
         "category": "maintainability",
+        "description": "限制每个文件的行数",
         "reason": "没必要限制"
     }
 }

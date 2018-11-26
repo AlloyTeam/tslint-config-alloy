@@ -8,8 +8,8 @@
         ]
     },
     "meta": {
-        "description": "类、枚举类型、函数必须写注释",
         "category": "style",
+        "description": "类、枚举类型、函数必须写注释",
         "requires-type-info": true
     }
 }

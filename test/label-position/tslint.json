@@ -3,8 +3,8 @@
         "label-position": false
     },
     "meta": {
-        "description": "只允许在 do for while switch 中使用 label",
         "category": "functionality",
-        "reason": "在任何情况都不应该使用 label"
+        "description": "只允许在 `do` `for` `while` `switch` 中使用 `label`",
+        "reason": "在任何情况都不应该使用 `label`"
     }
 }

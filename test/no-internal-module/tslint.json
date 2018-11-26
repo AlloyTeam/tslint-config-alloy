@@ -4,9 +4,9 @@
     },
     "meta": {
         "category": "typescript-specific",
-        "description": "禁止使用 module 来定义命名空间",
+        "description": "禁止使用 `module` 来定义命名空间",
+        "reason": "`module` 已成为 js 的关键字",
         "ts-only": true,
-        "fixable": true,
-        "reason": "module 已成为 js 的关键字"
+        "fixable": true
     }
 }

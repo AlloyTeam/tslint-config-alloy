@@ -3,7 +3,7 @@
         "switch-default": false
     },
     "meta": {
-        "description": "switch 语句必须有 default",
-        "category": "functionality"
+        "category": "functionality",
+        "description": "`switch` 语句必须有 `default`"
     }
 }

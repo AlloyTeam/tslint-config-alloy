@@ -5,9 +5,9 @@
     "meta": {
         "category": "typescript-specific",
         "description": "禁止无用的类型断言",
+        "reason": "Requires Type Info 的规则，无法在编辑器中显示错误，不方便修复",
         "ts-only": true,
         "fixable": true,
-        "requires-type-info": true,
-        "reason": "Requires Type Info 的规则，无法在编辑器中显示错误，不方便修复"
+        "requires-type-info": true
     }
 }

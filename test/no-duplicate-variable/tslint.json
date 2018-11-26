@@ -6,7 +6,7 @@
         ]
     },
     "meta": {
-        "description": "禁止出现重复的变量定义或函数参数名",
-        "category": "functionality"
+        "category": "functionality",
+        "description": "禁止出现重复的变量定义或函数参数名"
     }
 }

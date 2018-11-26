@@ -1,12 +1,9 @@
 {
     "rules": {
-        "no-implicit-dependencies": [
-            true,
-            "dev"
-        ]
+        "no-implicit-dependencies": [true, "dev"]
     },
     "meta": {
-        "description": "禁止引入 package.json 中不存在的模块",
-        "category": "functionality"
+        "category": "functionality",
+        "description": "禁止引入 `package.json` 中不存在的模块"
     }
 }

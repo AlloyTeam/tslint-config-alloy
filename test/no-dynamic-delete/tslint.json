@@ -3,8 +3,8 @@
         "no-dynamic-delete": false
     },
     "meta": {
-        "description": "禁止 delete 动态的值",
         "category": "functionality",
+        "description": "禁止 `delete` 动态的值",
         "reason": "没必要限制"
     }
 }

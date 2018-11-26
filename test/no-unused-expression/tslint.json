@@ -3,7 +3,7 @@
         "no-unused-expression": true
     },
     "meta": {
-        "description": "禁止无用的表达式",
-        "category": "functionality"
+        "category": "functionality",
+        "description": "禁止无用的表达式"
     }
 }

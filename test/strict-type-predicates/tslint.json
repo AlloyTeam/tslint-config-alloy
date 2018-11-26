@@ -3,8 +3,8 @@
         "strict-type-predicates": true
     },
     "meta": {
-        "description": "禁止出现永远为 true 或永远为 false 的条件判断（通过类型预测出一个表达式为 true 还是 false）",
         "category": "functionality",
+        "description": "禁止出现永远为 `true` 或永远为 `false` 的条件判断（通过类型预测出一个表达式为 `true` 还是 `false`）",
         "ts-only": true,
         "requires-type-info": true
     }

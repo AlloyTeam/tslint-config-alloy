@@ -5,8 +5,8 @@
     "meta": {
         "category": "typescript-specific",
         "description": "禁止给一个初始化时直接赋值为 `number`, `string` 或 `boolean` 的变量显式的指定类型",
+        "reason": "可以简化代码，并且支持自动修复",
         "ts-only": true,
-        "fixable": true,
-        "reason": "可以简化代码，并且支持自动修复"
+        "fixable": true
     }
 }

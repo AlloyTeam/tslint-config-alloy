@@ -3,8 +3,8 @@
         "prefer-function-over-method": false
     },
     "meta": {
-        "description": "类中没有使用 this 的方法应该提取成类外的函数",
         "category": "style",
+        "description": "类中没有使用 `this` 的方法应该提取成类外的函数",
         "reason": "太严格了"
     }
 }

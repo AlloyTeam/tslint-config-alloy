@@ -1,12 +1,9 @@
 {
     "rules": {
-        "one-variable-per-declaration": [
-            true,
-            "ignore-for-loop"
-        ]
+        "one-variable-per-declaration": [true, "ignore-for-loop"]
     },
     "meta": {
-        "description": "变量申明必须每行一个，for 循环的初始条件中除外",
-        "category": "style"
+        "category": "style",
+        "description": "变量申明必须每行一个，`for` 循环的初始条件中除外"
     }
 }

@@ -3,8 +3,8 @@
         "type-literal-delimiter": true
     },
     "meta": {
-        "description": "字面类型的每个成员都必须有分号",
         "category": "style",
+        "description": "字面类型的每个成员都必须有分号",
         "ts-only": true
     }
 }

@@ -3,8 +3,8 @@
         "no-inferred-empty-object-type": false
     },
     "meta": {
-        "description": "禁止推论出的类型是空对象类型",
         "category": "functionality",
+        "description": "禁止推论出的类型是空对象类型",
         "ts-only": true,
         "requires-type-info": true
     }

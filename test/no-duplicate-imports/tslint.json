@@ -3,7 +3,7 @@
         "no-duplicate-imports": true
     },
     "meta": {
-        "description": "禁止出现重复的 import",
-        "category": "maintainability"
+        "category": "maintainability",
+        "description": "禁止出现重复的 `import`"
     }
 }

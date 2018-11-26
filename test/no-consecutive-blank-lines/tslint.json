@@ -6,8 +6,8 @@
         ]
     },
     "meta": {
-        "description": "禁止连续超过三行空行",
         "category": "style",
+        "description": "禁止连续超过三行空行",
         "fixable": true,
         "prettier": true
     }

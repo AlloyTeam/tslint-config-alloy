@@ -3,8 +3,8 @@
         "return-undefined": true
     },
     "meta": {
-        "description": "使用 return; 而不是 return undefined;",
         "category": "style",
+        "description": "使用 `return;` 而不是 `return undefined;`",
         "requires-type-info": true
     }
 }

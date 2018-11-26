@@ -4,8 +4,8 @@
     },
     "meta": {
         "category": "typescript-specific",
-        "description": "async 函数的返回值必须是 Promise",
-        "requires-type-info": true,
-        "reason": "有时 async 函数在某个分支是同步的，不需要返回 Promise\nRequires Type Info 的规则，无法在编辑器中显示错误，不方便修复"
+        "description": "`async` 函数的返回值必须是 `Promise`",
+        "reason": "有时 `async` 函数在某个分支是同步的，不需要返回 `Promise`\nRequires Type Info 的规则，无法在编辑器中显示错误，不方便修复",
+        "requires-type-info": true
     }
 }

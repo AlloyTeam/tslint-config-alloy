@@ -3,8 +3,8 @@
         "no-for-in-array": true
     },
     "meta": {
-        "description": "禁止对 array 使用 for in 循环",
         "category": "functionality",
+        "description": "禁止对 `array` 使用 `for in` 循环",
         "requires-type-info": true
     }
 }

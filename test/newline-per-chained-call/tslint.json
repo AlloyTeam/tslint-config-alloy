@@ -3,8 +3,8 @@
         "newline-per-chained-call": true
     },
     "meta": {
-        "description": "链式调用时，每次调用都必须占用一行",
         "category": "style",
+        "description": "链式调用时，每次调用都必须占用一行",
         "prettier": true
     }
 }

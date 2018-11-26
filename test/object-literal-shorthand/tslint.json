@@ -3,8 +3,8 @@
         "object-literal-shorthand": true
     },
     "meta": {
-        "description": "必须使用 a = {b} 而不是 a = {b: b}",
         "category": "style",
+        "description": "必须使用 `a = {b}` 而不是 `a = {b: b}`",
         "fixable": true
     }
 }

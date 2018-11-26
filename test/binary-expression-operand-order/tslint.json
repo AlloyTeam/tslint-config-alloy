@@ -3,8 +3,8 @@
         "binary-expression-operand-order": false
     },
     "meta": {
-        "description": "数字字面量必须在加号的右边，即禁止 1 + x",
         "category": "style",
+        "description": "数字字面量必须在加号的右边，即禁止 `1 + x`",
         "reason": "没必要限制"
     }
 }

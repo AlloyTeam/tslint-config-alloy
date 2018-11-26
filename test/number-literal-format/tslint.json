@@ -3,8 +3,8 @@
         "number-literal-format": true
     },
     "meta": {
-        "description": "小数必须以 0. 开头，禁止以 . 开头，并且不能以 0 结尾",
         "category": "style",
+        "description": "小数必须以 `0.` 开头，禁止以 `.` 开头，并且不能以 `0` 结尾",
         "prettier": true
     }
 }

@@ -3,8 +3,8 @@
         "eofline": true
     },
     "meta": {
-        "description": "文件最后一行必须有一个空行",
         "category": "maintainability",
+        "description": "文件最后一行必须有一个空行",
         "fixable": true,
         "prettier": true
     }

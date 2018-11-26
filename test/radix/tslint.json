@@ -3,7 +3,7 @@
         "radix": true
     },
     "meta": {
-        "description": "parseInt 必须传入第二个参数",
-        "category": "functionality"
+        "category": "functionality",
+        "description": "`parseInt` 必须传入第二个参数"
     }
 }

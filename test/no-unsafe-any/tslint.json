@@ -3,8 +3,8 @@
         "no-unsafe-any": false
     },
     "meta": {
-        "description": "禁止取用一个类型为 any 的对象的属性",
         "category": "functionality",
+        "description": "禁止取用一个类型为 `any` 的对象的属性",
         "reason": "太严格了",
         "ts-only": true,
         "requires-type-info": true

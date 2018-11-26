@@ -3,8 +3,8 @@
         "max-line-length": false
     },
     "meta": {
-        "description": "限制每行字符数",
         "category": "maintainability",
+        "description": "限制每行字符数",
         "reason": "没必要限制",
         "prettier": true
     }

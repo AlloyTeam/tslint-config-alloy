@@ -3,7 +3,7 @@
         "class-name": true
     },
     "meta": {
-        "description": "类名与接口名必须为驼峰式",
-        "category": "style"
+        "category": "style",
+        "description": "类名与接口名必须为驼峰式"
     }
 }

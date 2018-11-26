@@ -3,8 +3,8 @@
         "deprecation": true
     },
     "meta": {
-        "description": "禁止使用废弃（被标识了 @deprecated）的 API",
         "category": "maintainability",
+        "description": "禁止使用废弃（被标识了 `@deprecated`）的 API",
         "requires-type-info": true
     }
 }

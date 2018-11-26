@@ -3,8 +3,8 @@
         "switch-final-break": false
     },
     "meta": {
-        "description": "switch 的最后一项禁止有 break",
         "category": "style",
+        "description": "`switch` 的最后一项禁止有 `break`",
         "reason": "没必要限制",
         "fixable": true
     }

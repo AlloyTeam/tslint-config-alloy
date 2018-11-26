@@ -3,8 +3,8 @@
         "strict-boolean-expressions": false
     },
     "meta": {
-        "description": "在分支条件判断中必须传入布尔类型的值",
         "category": "functionality",
+        "description": "在分支条件判断中必须传入布尔类型的值",
         "reason": "太严格了",
         "ts-only": true,
         "requires-type-info": true

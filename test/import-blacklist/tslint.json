@@ -3,8 +3,8 @@
         "import-blacklist": false
     },
     "meta": {
-        "description": "禁用指定的模块",
         "category": "functionality",
+        "description": "禁用指定的模块",
         "reason": "用于限制某个具体的模块不能使用"
     }
 }

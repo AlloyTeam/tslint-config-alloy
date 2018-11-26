@@ -3,8 +3,8 @@
         "no-unnecessary-callback-wrapper": false
     },
     "meta": {
-        "description": "禁止没必要的函数调用，如 x => f(x) 应该简写为 f",
         "category": "style",
+        "description": "禁止没必要的函数调用，如 `x => f(x)` 应该简写为 `f`",
         "reason": "没必要限制"
     }
 }

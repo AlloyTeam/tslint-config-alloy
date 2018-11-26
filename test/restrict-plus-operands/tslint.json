@@ -3,8 +3,8 @@
         "restrict-plus-operands": false
     },
     "meta": {
-        "description": "使用加号时，两者必须同为数字或同为字符串",
         "category": "functionality",
+        "description": "使用加号时，两者必须同为数字或同为字符串",
         "reason": "太严格了",
         "requires-type-info": true
     }

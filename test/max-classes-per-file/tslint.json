@@ -3,8 +3,8 @@
         "max-classes-per-file": false
     },
     "meta": {
-        "description": "限制每个文件的类的数量",
         "category": "maintainability",
+        "description": "限制每个文件的类的数量",
         "reason": "没必要限制"
     }
 }

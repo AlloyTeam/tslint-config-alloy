@@ -3,9 +3,9 @@
         "arrow-parens": true
     },
     "meta": {
-        "description": "箭头函数的参数必须有小括号",
         "category": "style",
-        "prettier": true,
-        "fixable": true
+        "description": "箭头函数的参数必须有小括号",
+        "fixable": true,
+        "prettier": true
     }
 }

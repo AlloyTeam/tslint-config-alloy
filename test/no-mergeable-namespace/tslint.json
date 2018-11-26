@@ -3,8 +3,8 @@
         "no-mergeable-namespace": true
     },
     "meta": {
-        "description": "禁止一个文件中出现多个相同的 namespace",
         "category": "maintainability",
+        "description": "禁止一个文件中出现多个相同的 `namespace`",
         "ts-only": true
     }
 }

@@ -3,8 +3,8 @@
         "no-irregular-whitespace": true
     },
     "meta": {
-        "description": "禁止使用特殊空白符（比如全角空格）",
         "category": "style",
+        "description": "禁止使用特殊空白符（比如全角空格）",
         "fixable": true,
         "prettier": true
     }

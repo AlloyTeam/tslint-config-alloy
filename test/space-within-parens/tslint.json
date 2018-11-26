@@ -6,8 +6,8 @@
         ]
     },
     "meta": {
-        "description": "括号内首尾禁止有空格",
         "category": "style",
+        "description": "括号内首尾禁止有空格",
         "fixable": true,
         "prettier": true
     }

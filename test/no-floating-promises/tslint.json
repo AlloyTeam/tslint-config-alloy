@@ -3,8 +3,8 @@
         "no-floating-promises": false
     },
     "meta": {
-        "description": "函数返回值为 promise 时，必须被处理",
         "category": "functionality",
+        "description": "函数返回值为 `Promise` 时，必须被处理",
         "reason": "太严格了",
         "ts-only": true,
         "requires-type-info": true

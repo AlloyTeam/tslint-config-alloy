@@ -5,7 +5,7 @@
     "meta": {
         "category": "typescript-specific",
         "description": "变量、函数返回值、函数参数等必须要有类型定义",
-        "ts-only": true,
-        "reason": "大部分类型都可以依靠类型推论，没必要全部手动定义"
+        "reason": "大部分类型都可以依靠类型推论，没必要全部手动定义",
+        "ts-only": true
     }
 }

@@ -3,8 +3,8 @@
         "typeof-compare": false
     },
     "meta": {
-        "description": "typeof 表达式比较的对象必须是 'undefined', 'object', 'boolean', 'number', 'string', 'function' 或 'symbol'",
         "category": "functionality",
+        "description": "`typeof` 表达式比较的对象必须是 `'undefined'`, `'object'`, `'boolean'`, `'number'`, `'string'`, `'function'` 或 `'symbol'`",
         "reason": "TypeScirpt 2.2 之后，编译器已经只带了这个功能"
     }
 }
