@@ -1,0 +1,10 @@
+{
+    "rules": {
+        "no-invalid-this": true
+    },
+    "meta": {
+        "description": "禁止在类外面使用 this",
+        "reason": "禁止滥用 this，如需使用，在文件中局部禁用此规则即可",
+        "category": "functionality"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "rules": {
+        "interface-over-type-literal": true
+    },
+    "meta": {
+        "description": "优先使用接口而不是字面类型",
+        "reason": "接口可以 implement extend 和 merge",
+        "category": "style",
+        "ts-only": true,
+        "fixable": true
+    }
+}

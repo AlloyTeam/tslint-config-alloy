@@ -1,0 +1,15 @@
+{
+    "rules": {
+        "linebreak-style": [
+            true,
+            "LF"
+        ]
+    },
+    "meta": {
+        "description": "限制换行符为 LF 或 CRLF",
+        "category": "maintainability",
+        "reason": "没必要限制",
+        "fixable": true,
+        "prettier": true
+    }
+}

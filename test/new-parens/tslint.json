@@ -1,0 +1,10 @@
+{
+    "rules": {
+        "new-parens": true
+    },
+    "meta": {
+        "description": "new 后面只必须有一个空格",
+        "category": "style",
+        "prettier": true
+    }
+}

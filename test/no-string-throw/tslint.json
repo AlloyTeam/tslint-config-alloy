@@ -1,0 +1,10 @@
+{
+    "rules": {
+        "no-string-throw": true
+    },
+    "meta": {
+        "description": "禁止 throw 字符串，必须 throw 一个 Error 对象",
+        "category": "functionality",
+        "fixable": true
+    }
+}

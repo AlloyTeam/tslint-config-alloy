@@ -1,0 +1,12 @@
+{
+    "rules": {
+        "object-literal-key-quotes": false
+    },
+    "meta": {
+        "description": "对象的 key 必须用引号包起来",
+        "category": "style",
+        "reason": "没必要限制",
+        "fixable": true,
+        "prettier": true
+    }
+}

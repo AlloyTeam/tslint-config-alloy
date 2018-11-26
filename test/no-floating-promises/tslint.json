@@ -1,0 +1,12 @@
+{
+    "rules": {
+        "no-floating-promises": false
+    },
+    "meta": {
+        "description": "函数返回值为 promise 时，必须被处理",
+        "category": "functionality",
+        "reason": "太严格了",
+        "ts-only": true,
+        "requires-type-info": true
+    }
+}

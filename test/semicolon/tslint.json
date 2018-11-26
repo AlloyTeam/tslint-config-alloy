@@ -1,0 +1,14 @@
+{
+    "rules": {
+        "semicolon": [
+            true,
+            "always"
+        ]
+    },
+    "meta": {
+        "description": "行尾必须有分号",
+        "category": "style",
+        "fixable": true,
+        "prettier": true
+    }
+}

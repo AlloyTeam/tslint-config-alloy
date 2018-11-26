@@ -1,0 +1,13 @@
+{
+    "rules": {
+        "comment-format": [
+            true,
+            "check-space"
+        ]
+    },
+    "meta": {
+        "description": "限制单行注释的规则",
+        "category": "style",
+        "fixable": true
+    }
+}

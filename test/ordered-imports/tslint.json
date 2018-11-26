@@ -1,0 +1,10 @@
+{
+    "rules": {
+        "ordered-imports": true
+    },
+    "meta": {
+        "description": "import 必须排序",
+        "category": "style",
+        "fixable": true
+    }
+}

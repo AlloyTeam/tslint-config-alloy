@@ -1,0 +1,15 @@
+{
+    "rules": {
+        "completed-docs": [
+            true,
+            "classes",
+            "enums",
+            "functions"
+        ]
+    },
+    "meta": {
+        "description": "类、枚举类型、函数必须写注释",
+        "category": "style",
+        "requires-type-info": true
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "rules": {
+        "align": false
+    },
+    "meta": {
+        "description": "变量定义需要竖向对其",
+        "category": "style",
+        "reason": "没必要限制",
+        "fixable": true,
+        "prettier": true
+    }
+}

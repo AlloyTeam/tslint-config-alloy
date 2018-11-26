@@ -1,0 +1,12 @@
+{
+    "rules": {
+        "use-default-type-parameter": false
+    },
+    "meta": {
+        "description": "传入的类型与默认类型一致时，必须省略传入的类型",
+        "category": "functionality",
+        "reason": "没必要限制",
+        "ts-only": true,
+        "requires-type-info": true
+    }
+}

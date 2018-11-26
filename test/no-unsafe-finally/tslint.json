@@ -1,0 +1,10 @@
+{
+    "rules": {
+        "no-unsafe-finally": true
+    },
+    "meta": {
+        "description": "禁止 finally 内出现 return, continue, break, throw 等",
+        "reason": "finally 会比 catch 先执行",
+        "category": "functionality"
+    }
+}

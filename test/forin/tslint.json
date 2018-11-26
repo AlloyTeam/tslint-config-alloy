@@ -1,0 +1,9 @@
+{
+    "rules": {
+        "forin": true
+    },
+    "meta": {
+        "description": "for in 内部必须有 hasOwnProperty",
+        "category": "functionality"
+    }
+}

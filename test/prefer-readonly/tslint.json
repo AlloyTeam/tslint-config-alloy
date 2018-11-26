@@ -1,0 +1,12 @@
+{
+    "rules": {
+        "prefer-readonly": false
+    },
+    "meta": {
+        "description": "如果私有变量只在构造函数中被赋值，则必须使用 readonly 修饰符",
+        "category": "maintainability",
+        "reason": "没必要限制",
+        "ts-only": true,
+        "requires-type-info": true
+    }
+}

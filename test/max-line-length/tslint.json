@@ -1,0 +1,11 @@
+{
+    "rules": {
+        "max-line-length": false
+    },
+    "meta": {
+        "description": "限制每行字符数",
+        "category": "maintainability",
+        "reason": "没必要限制",
+        "prettier": true
+    }
+}

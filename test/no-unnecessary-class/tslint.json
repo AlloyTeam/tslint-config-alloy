@@ -1,0 +1,10 @@
+{
+    "rules": {
+        "no-unnecessary-class": false
+    },
+    "meta": {
+        "description": "禁止定义没必要的类，比如只有静态方法的类",
+        "category": "functionality",
+        "reason": "没必要限制"
+    }
+}

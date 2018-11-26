@@ -1,0 +1,9 @@
+{
+    "rules": {
+        "newline-before-return": true
+    },
+    "meta": {
+        "description": "return 语句前必须有空行",
+        "category": "style"
+    }
+}

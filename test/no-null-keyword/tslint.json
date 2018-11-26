@@ -1,0 +1,11 @@
+{
+    "rules": {
+        "no-null-keyword": false
+    },
+    "meta": {
+        "description": "禁止使用 null",
+        "category": "functionality",
+        "reason": "没必要限制",
+        "fixable": true
+    }
+}

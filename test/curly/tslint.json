@@ -1,0 +1,13 @@
+{
+    "rules": {
+        "curly": [
+            true,
+            "ignore-same-line"
+        ]
+    },
+    "meta": {
+        "description": "if 后面必须有 {，除非是单行 if",
+        "category": "functionality",
+        "fixable": true
+    }
+}

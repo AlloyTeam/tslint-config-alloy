@@ -1,0 +1,10 @@
+{
+    "rules": {
+        "no-console": false
+    },
+    "meta": {
+        "description": "禁止使用 console",
+        "category": "functionality",
+        "reason": "没必要禁止，禁止的话会让 autofixOnSave 很不方便"
+    }
+}

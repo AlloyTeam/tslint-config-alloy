@@ -1,0 +1,11 @@
+{
+    "rules": {
+        "one-line": true
+    },
+    "meta": {
+        "description": "if 后的 { 禁止换行",
+        "category": "style",
+        "fixable": true,
+        "prettier": true
+    }
+}

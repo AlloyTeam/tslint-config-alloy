@@ -1,0 +1,13 @@
+{
+    "rules": {
+        "no-boolean-literal-compare": false
+    },
+    "meta": {
+        "description": "禁止变量与 true 或 false 比较",
+        "category": "style",
+        "reason": "没必要限制",
+        "ts-only": true,
+        "fixable": true,
+        "requires-type-info": true
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "rules": {
+        "no-trailing-whitespace": true
+    },
+    "meta": {
+        "description": "禁止行尾有空格",
+        "category": "style",
+        "fixable": true,
+        "prettier": true
+    }
+}

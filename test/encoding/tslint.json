@@ -1,0 +1,9 @@
+{
+    "rules": {
+        "encoding": true
+    },
+    "meta": {
+        "description": "文件类型必须时 utf-8",
+        "category": "style"
+    }
+}

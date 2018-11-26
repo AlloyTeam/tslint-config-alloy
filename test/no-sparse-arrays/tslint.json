@@ -1,0 +1,9 @@
+{
+    "rules": {
+        "no-sparse-arrays": true
+    },
+    "meta": {
+        "description": "禁止在数组中出现连续的逗号，如 let foo = [,,]",
+        "category": "functionality"
+    }
+}

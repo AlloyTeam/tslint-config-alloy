@@ -1,0 +1,10 @@
+{
+    "rules": {
+        "no-default-export": false
+    },
+    "meta": {
+        "description": "禁止使用 default export",
+        "category": "maintainability",
+        "reason": "没必要限制"
+    }
+}

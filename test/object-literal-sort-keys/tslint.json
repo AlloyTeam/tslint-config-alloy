@@ -1,0 +1,10 @@
+{
+    "rules": {
+        "object-literal-sort-keys": false
+    },
+    "meta": {
+        "description": "对象字面量必须按 key 排序",
+        "category": "maintainability",
+        "reason": "太严格了"
+    }
+}

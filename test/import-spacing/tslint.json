@@ -1,0 +1,10 @@
+{
+    "rules": {
+        "import-spacing": true
+    },
+    "meta": {
+        "description": "import 语句中，关键字之间的间距必须是一个空格",
+        "category": "style",
+        "prettier": true
+    }
+}

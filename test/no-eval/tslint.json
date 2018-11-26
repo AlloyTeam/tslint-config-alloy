@@ -1,0 +1,9 @@
+{
+    "rules": {
+        "no-eval": true
+    },
+    "meta": {
+        "description": "禁止使用 eval",
+        "category": "functionality"
+    }
+}

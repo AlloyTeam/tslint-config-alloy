@@ -1,0 +1,10 @@
+{
+    "rules": {
+        "no-string-literal": true
+    },
+    "meta": {
+        "description": "禁止出现 foo['bar']，必须写成 foo.bar",
+        "category": "functionality",
+        "fixable": true
+    }
+}

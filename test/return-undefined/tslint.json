@@ -1,0 +1,10 @@
+{
+    "rules": {
+        "return-undefined": true
+    },
+    "meta": {
+        "description": "使用 return; 而不是 return undefined;",
+        "category": "style",
+        "requires-type-info": true
+    }
+}

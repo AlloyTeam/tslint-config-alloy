@@ -1,0 +1,9 @@
+{
+    "rules": {
+        "no-conditional-assignment": true
+    },
+    "meta": {
+        "description": "禁止在分支条件判断中有赋值操作",
+        "category": "functionality"
+    }
+}

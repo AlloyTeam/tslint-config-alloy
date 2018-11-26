@@ -1,0 +1,9 @@
+{
+    "rules": {
+        "no-switch-case-fall-through": true
+    },
+    "meta": {
+        "description": "switch 的 case 必须 return 或 break",
+        "category": "functionality"
+    }
+}

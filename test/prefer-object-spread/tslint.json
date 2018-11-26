@@ -1,0 +1,11 @@
+{
+    "rules": {
+        "prefer-object-spread": true
+    },
+    "meta": {
+        "description": "使用 { ...foo, bar: 1 } 代替 Object.assign({}, foo, { bar: 1 })",
+        "reason": "前者的类型检查更完善",
+        "category": "functionality",
+        "fixable": true
+    }
+}

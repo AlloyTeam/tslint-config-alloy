@@ -1,0 +1,10 @@
+{
+    "rules": {
+        "no-bitwise": false
+    },
+    "meta": {
+        "description": "禁止使用位运算",
+        "category": "functionality",
+        "reason": "位运算很常见"
+    }
+}

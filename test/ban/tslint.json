@@ -1,0 +1,10 @@
+{
+    "rules": {
+        "ban": false
+    },
+    "meta": {
+        "description": "禁用指定的函数或全局方法",
+        "category": "functionality",
+        "reason": "用于限制某个具体的函数不能使用"
+    }
+}

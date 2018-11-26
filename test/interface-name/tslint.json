@@ -1,0 +1,11 @@
+{
+    "rules": {
+        "interface-name": false
+    },
+    "meta": {
+        "description": "接口名称必须已 I 开头",
+        "category": "style",
+        "reason": "没必要限制",
+        "ts-only": true
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "rules": {
+        "import-blacklist": false
+    },
+    "meta": {
+        "description": "禁用指定的模块",
+        "category": "functionality",
+        "reason": "用于限制某个具体的模块不能使用"
+    }
+}

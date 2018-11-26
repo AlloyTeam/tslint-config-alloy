@@ -1,0 +1,10 @@
+{
+    "rules": {
+        "prefer-conditional-expression": false
+    },
+    "meta": {
+        "description": "可以用三元表达式时，就不用 if else",
+        "category": "functionality",
+        "reason": "没必要限制"
+    }
+}

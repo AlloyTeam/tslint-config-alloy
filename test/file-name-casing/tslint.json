@@ -1,0 +1,10 @@
+{
+    "rules": {
+        "file-name-casing": false
+    },
+    "meta": {
+        "description": "约束文件命名规范",
+        "category": "style",
+        "reason": "没必要约束"
+    }
+}

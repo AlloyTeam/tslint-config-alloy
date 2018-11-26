@@ -1,0 +1,10 @@
+{
+    "rules": {
+        "no-use-before-declare": true
+    },
+    "meta": {
+        "description": "变量必须先定义后使用",
+        "category": "functionality",
+        "requires-type-info": true
+    }
+}

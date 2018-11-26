@@ -1,0 +1,10 @@
+{
+    "rules": {
+        "deprecation": true
+    },
+    "meta": {
+        "description": "禁止使用废弃（被标识了 @deprecated）的 API",
+        "category": "maintainability",
+        "requires-type-info": true
+    }
+}

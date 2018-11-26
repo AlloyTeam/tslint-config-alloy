@@ -1,0 +1,10 @@
+{
+    "rules": {
+        "no-for-in-array": true
+    },
+    "meta": {
+        "description": "禁止对 array 使用 for in 循环",
+        "category": "functionality",
+        "requires-type-info": true
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "rules": {
+        "no-redundant-jsdoc": true
+    },
+    "meta": {
+        "description": "禁止 JSDoc 中的冗余类型声明，因为 TypeScirpt 已经包含了大部分功能",
+        "category": "style",
+        "ts-only": true
+    }
+}

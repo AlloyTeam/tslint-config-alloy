@@ -1,0 +1,10 @@
+{
+    "rules": {
+        "no-submodule-imports": false
+    },
+    "meta": {
+        "description": "禁止 import 模块的子文件",
+        "category": "functionality",
+        "reason": "没必要限制"
+    }
+}

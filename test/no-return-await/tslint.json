@@ -1,0 +1,11 @@
+{
+    "rules": {
+        "no-return-await": false
+    },
+    "meta": {
+        "description": "禁止没必要的 return await",
+        "category": "functionality",
+        "reason": "return await 用起来没问题",
+        "fixable": true
+    }
+}

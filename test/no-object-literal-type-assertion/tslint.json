@@ -1,0 +1,10 @@
+{
+    "rules": {
+        "no-object-literal-type-assertion": true
+    },
+    "meta": {
+        "description": "禁止对对象字面量进行类型断言（断言成 any 是允许的）",
+        "category": "functionality",
+        "ts-only": true
+    }
+}

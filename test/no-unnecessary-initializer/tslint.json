@@ -1,0 +1,10 @@
+{
+    "rules": {
+        "no-unnecessary-initializer": true
+    },
+    "meta": {
+        "description": "禁止变量定义时赋值为 undefined",
+        "category": "style",
+        "fixable": true
+    }
+}

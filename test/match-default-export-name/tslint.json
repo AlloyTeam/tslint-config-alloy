@@ -1,0 +1,12 @@
+{
+    "rules": {
+        "match-default-export-name": false
+    },
+    "meta": {
+        "description": "import 的名称必须和 export default 的名称一致",
+        "category": "style",
+        "reason": "没必要限制",
+        "ts-only": true,
+        "requires-type-info": true
+    }
+}

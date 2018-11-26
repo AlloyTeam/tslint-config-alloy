@@ -1,0 +1,10 @@
+{
+    "rules": {
+        "arrow-return-shorthand": true
+    },
+    "meta": {
+        "description": "箭头函数的函数体只有 return 语句的时候，必须简写",
+        "category": "style",
+        "fixable": true
+    }
+}

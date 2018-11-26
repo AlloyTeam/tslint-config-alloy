@@ -1,0 +1,12 @@
+{
+    "rules": {
+        "no-duplicate-variable": [
+            true,
+            "check-parameters"
+        ]
+    },
+    "meta": {
+        "description": "禁止出现重复的变量定义或函数参数名",
+        "category": "functionality"
+    }
+}

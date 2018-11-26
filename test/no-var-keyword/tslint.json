@@ -1,0 +1,10 @@
+{
+    "rules": {
+        "no-var-keyword": true
+    },
+    "meta": {
+        "description": "禁止使用 var",
+        "category": "functionality",
+        "fixable": true
+    }
+}

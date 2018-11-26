@@ -1,0 +1,14 @@
+{
+    "rules": {
+        "no-unbound-method": [
+            true,
+            "ignore-static"
+        ]
+    },
+    "meta": {
+        "description": "使用实例的方法时，必须 bind 到实例上",
+        "category": "functionality",
+        "ts-only": true,
+        "requires-type-info": true
+    }
+}

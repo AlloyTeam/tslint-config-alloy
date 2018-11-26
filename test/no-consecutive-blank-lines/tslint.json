@@ -1,0 +1,14 @@
+{
+    "rules": {
+        "no-consecutive-blank-lines": [
+            true,
+            3
+        ]
+    },
+    "meta": {
+        "description": "禁止连续超过三行空行",
+        "category": "style",
+        "fixable": true,
+        "prettier": true
+    }
+}
