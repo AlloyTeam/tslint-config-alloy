@@ -1,9 +1,6 @@
 {
     "rules": {
-        "jsdoc-format": [
-            true,
-            "check-multiline-start"
-        ]
+        "jsdoc-format": [true, "check-multiline-start"]
     },
     "meta": {
         "description": "注释必须符合 JSDoc 规范"

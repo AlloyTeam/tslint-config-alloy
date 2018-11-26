@@ -1,9 +1,6 @@
 {
     "rules": {
-        "space-within-parens": [
-            true,
-            0
-        ]
+        "space-within-parens": [true, 0]
     },
     "meta": {
         "category": "style",

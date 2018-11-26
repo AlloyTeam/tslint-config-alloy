@@ -1,9 +1,6 @@
 {
     "rules": {
-        "comment-format": [
-            true,
-            "check-space"
-        ]
+        "comment-format": [true, "check-space"]
     },
     "meta": {
         "category": "style",

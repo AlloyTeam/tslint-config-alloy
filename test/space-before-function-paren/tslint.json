@@ -1,9 +1,6 @@
 {
     "rules": {
-        "space-before-function-paren": [
-            true,
-            "asyncArrow"
-        ]
+        "space-before-function-paren": [true, "asyncArrow"]
     },
     "meta": {
         "category": "style",

@@ -1,9 +1,6 @@
 {
     "rules": {
-        "linebreak-style": [
-            true,
-            "LF"
-        ]
+        "linebreak-style": [true, "LF"]
     },
     "meta": {
         "category": "maintainability",

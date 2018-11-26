@@ -1,9 +1,6 @@
 {
     "rules": {
-        "semicolon": [
-            true,
-            "always"
-        ]
+        "semicolon": [true, "always"]
     },
     "meta": {
         "category": "style",

@@ -1,9 +1,6 @@
 {
     "rules": {
-        "no-consecutive-blank-lines": [
-            true,
-            3
-        ]
+        "no-consecutive-blank-lines": [true, 3]
     },
     "meta": {
         "category": "style",
