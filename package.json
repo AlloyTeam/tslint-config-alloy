@@ -4,6 +4,7 @@
     "description": "AlloyTeam TSLint 规则",
     "main": "index.js",
     "scripts": {
+        "build": "ts-node scripts/build",
         "tslint": "tslint --project . ./**/*.ts",
         "test": "mocha -r ts-node/register test/index.ts",
         "test:watch": "mocha -r ts-node/register -w --watch-extensions ts test/index.ts"

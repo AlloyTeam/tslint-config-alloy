@@ -133,8 +133,8 @@ module.exports = {
                     ruleHTML += `
         <tr>
             <td></td>
-            <td><strong>${Build.RuleCategoryDescription[ruleJson.meta.category].title}</strong></td>
-            <td>${Build.RuleCategoryDescription[ruleJson.meta.category].description}</td>
+            <td><strong>${Build.RuleCategoryDescription[ruleJson.meta.category].title}</strong></td>
+            <td>${Build.RuleCategoryDescription[ruleJson.meta.category].description}</td>
         </tr>`;
                     if (lastCategory !== '') {
                         ruleHTML =
@@ -158,11 +158,11 @@ module.exports = {
         const tableHTML = `
 <table>
     <thead>
-        <th>
-            <td>开关</td>
-            <td>名称</td>
-            <td>描述</td>
-        </th>
+        <tr>
+            <th>开关</th>
+            <th>名称</th>
+            <th>描述</th>
+        </tr>
     </thead>
     <tbody>${ruleListHTML}
     </tbody>

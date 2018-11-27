@@ -35,17 +35,17 @@ npm install --save-dev tslint typescript tslint-config-alloy
 
 <table>
     <thead>
-        <th>
-            <td>开关</td>
-            <td>名称</td>
-            <td>描述</td>
-        </th>
+        <tr>
+            <th>开关</th>
+            <th>名称</th>
+            <th>描述</th>
+        </tr>
     </thead>
     <tbody>
         <tr>
             <td></td>
-            <td><strong>TypeScript 相关</strong></td>
-            <td>与 TypeScript 特性相关的规则</td>
+            <td><strong>TypeScript 相关</strong></td>
+            <td>与 TypeScript 特性相关的规则</td>
         </tr>
         <tr>
             <td>✅</td>
@@ -161,8 +161,8 @@ npm install --save-dev tslint typescript tslint-config-alloy
         </tr>
         <tr>
             <td></td>
-            <td><strong>功能性检查</strong></td>
-            <td>找出可能的错误，以及可能会产生 bug 的编码习惯</td>
+            <td><strong>功能性检查</strong></td>
+            <td>找出可能的错误，以及可能会产生 bug 的编码习惯</td>
         </tr>
         <tr>
             <td>❌</td>
@@ -443,8 +443,8 @@ npm install --save-dev tslint typescript tslint-config-alloy
         </tr>
         <tr>
             <td></td>
-            <td><strong>可维护性</strong></td>
-            <td>增强代码可维护性的规则</td>
+            <td><strong>可维护性</strong></td>
+            <td>增强代码可维护性的规则</td>
         </tr>
         <tr>
             <td>✅</td>
@@ -530,8 +530,8 @@ npm install --save-dev tslint typescript tslint-config-alloy
         </tr>
         <tr>
             <td></td>
-            <td><strong>代码风格</strong></td>
-            <td>与代码风格相关的规则</td>
+            <td><strong>代码风格</strong></td>
+            <td>与代码风格相关的规则</td>
         </tr>
         <tr>
             <td>❌</td>
