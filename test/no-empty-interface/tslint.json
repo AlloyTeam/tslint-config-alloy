@@ -4,7 +4,7 @@
     },
     "meta": {
         "category": "typescript-specific",
-        "description": "禁止定义接口空的接口",
+        "description": "禁止定义空的接口",
         "ts-only": true
     }
 }

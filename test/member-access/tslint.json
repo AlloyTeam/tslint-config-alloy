@@ -1,11 +1,6 @@
 {
     "rules": {
-        "member-access": [
-            true,
-            "check-accessor",
-            "check-constructor",
-            "check-parameter-property"
-        ]
+        "member-access": [true, "check-accessor", "check-constructor", "check-parameter-property"]
     },
     "meta": {
         "category": "typescript-specific",

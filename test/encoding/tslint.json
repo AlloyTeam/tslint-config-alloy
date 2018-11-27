@@ -4,6 +4,6 @@
     },
     "meta": {
         "category": "style",
-        "description": "文件类型必须时 utf-8"
+        "description": "文件类型必须是 utf-8"
     }
 }

@@ -7,9 +7,7 @@ import { parseConfigFile } from 'tslint/lib/configuration';
 
 const ruleNameList = fs
     .readdirSync(__dirname)
-    .filter((filename) =>
-        fs.lstatSync(path.resolve(__dirname, filename)).isDirectory()
-    );
+    .filter((filename) => fs.lstatSync(path.resolve(__dirname, filename)).isDirectory());
 
 describe('TSLint rules', () => {
     // 遍历每个目录
@@ -40,10 +38,7 @@ describe('TSLint rules', () => {
                     );
                     const lintResult = linter.getResult();
                     // 错误数是否超过 0
-                    assert.ok(
-                        lintResult.errorCount > 0,
-                        'Does not have lint error'
-                    );
+                    assert.ok(lintResult.errorCount > 0, 'Does not have lint error');
                     // 错误规则是否是对应的测试规则
                     lintResult.failures.forEach((failure) => {
                         const failedRuleName = failure.getRuleName();
@@ -78,11 +73,7 @@ describe('TSLint rules', () => {
                     );
                     const lintResult = linter.getResult();
                     // 错误数是否等于 0
-                    assert.equal(
-                        lintResult.errorCount,
-                        0,
-                        'Have at least one error'
-                    );
+                    assert.equal(lintResult.errorCount, 0, 'Have at least one error');
                 });
             }
         });

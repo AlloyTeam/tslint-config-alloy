@@ -1,12 +1,6 @@
 {
     "rules": {
-        "quotemark": [
-            true,
-            "single",
-            "jsx-double",
-            "avoid-template",
-            "avoid-escape"
-        ]
+        "quotemark": [true, "single", "jsx-double", "avoid-template", "avoid-escape"]
     },
     "meta": {
         "category": "style",
