@@ -132,9 +132,8 @@ module.exports = {
                 if (lastCategory !== ruleJson.meta.category) {
                     ruleHTML += `
         <tr>
-            <td colspan="2"><strong>${
-                Build.RuleCategoryDescription[ruleJson.meta.category].title
-            }</strong></td>
+            <td></td>
+            <td><strong>${Build.RuleCategoryDescription[ruleJson.meta.category].title}</strong></td>
             <td>${Build.RuleCategoryDescription[ruleJson.meta.category].description}</td>
         </tr>`;
                     if (lastCategory !== '') {
