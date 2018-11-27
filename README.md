@@ -36,15 +36,14 @@ npm install --save-dev tslint typescript tslint-config-alloy
 <table>
     <thead>
         <tr>
-            <th>开关</th>
+            <th width="60">开关</th>
             <th>名称</th>
             <th>描述</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td></td>
-            <td><strong>TypeScript 相关</strong></td>
+            <td colspan="2"><strong>TypeScript 相关</strong></td>
             <td>与 TypeScript 特性相关的规则</td>
         </tr>
         <tr>
@@ -70,7 +69,7 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-any/">no-any</a></td>
-            <td>禁止使用 any</td>
+            <td>禁止使用 <code>any</code></td>
         </tr>
         <tr>
             <td>✅</td>
@@ -80,17 +79,17 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-import-side-effect/">no-import-side-effect</a></td>
-            <td>禁止导入立即执行的模块，除了 css, less, sass, scss</td>
+            <td>禁止导入立即执行的模块，除了 <code>css</code>, <code>less</code>, <code>sass</code>, <code>scss</code></td>
         </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-inferrable-types/">no-inferrable-types</a></td>
-            <td>禁止给一个初始化时直接赋值为 number, string 或 boolean 的变量显式的指定类型</td>
+            <td>禁止给一个初始化时直接赋值为 <code>number</code>, <code>string</code> 或 <code>boolean</code> 的变量显式的指定类型</td>
         </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-internal-module/">no-internal-module</a></td>
-            <td>禁止使用 module 来定义命名空间</td>
+            <td>禁止使用 <code>module</code> 来定义命名空间</td>
         </tr>
         <tr>
             <td>✅</td>
@@ -100,7 +99,7 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-namespace/">no-namespace</a></td>
-            <td>禁止使用 namespace 来定义命名空间</td>
+            <td>禁止使用 <code>namespace</code> 来定义命名空间</td>
         </tr>
         <tr>
             <td>✅</td>
@@ -115,7 +114,7 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-reference/">no-reference</a></td>
-            <td>禁止使用三斜线引入模块 /// <reference path="foo" /></td>
+            <td>禁止使用三斜线引入模块 <code>/// &lt;reference path="foo" /&gt;</code></td>
         </tr>
         <tr>
             <td>❌</td>
@@ -125,7 +124,7 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-var-requires/">no-var-requires</a></td>
-            <td>禁止使用 require 来引入模块</td>
+            <td>禁止使用 <code>require</code> 来引入模块</td>
         </tr>
         <tr>
             <td>✅</td>
@@ -135,12 +134,12 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/prefer-for-of/">prefer-for-of</a></td>
-            <td>使用 for 循环遍历数组时，如果 index 仅用于获取成员，则必须使用 for of 循环替代 for 循环</td>
+            <td>使用 <code>for</code> 循环遍历数组时，如果 <code>index</code> 仅用于获取成员，则必须使用 <code>for of</code> 循环替代 <code>for</code> 循环</td>
         </tr>
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/promise-function-async/">promise-function-async</a></td>
-            <td>async 函数的返回值必须是 Promise</td>
+            <td><code>async</code> 函数的返回值必须是 <code>Promise</code></td>
         </tr>
         <tr>
             <td>❌</td>
@@ -158,16 +157,16 @@ npm install --save-dev tslint typescript tslint-config-alloy
             <td>函数重载时，若能通过联合类型将两个函数的类型声明合为一个，则使用联合类型而不是两个函数声明</td>
         </tr>
         <tr>
+            <td colspan="3">　</td>
         </tr>
         <tr>
-            <td></td>
-            <td><strong>功能性检查</strong></td>
+            <td colspan="2"><strong>功能性检查</strong></td>
             <td>找出可能的错误，以及可能会产生 bug 的编码习惯</td>
         </tr>
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/await-promise/">await-promise</a></td>
-            <td>await 必须接受 Promise</td>
+            <td><code>await</code> 必须接受 <code>Promise</code></td>
         </tr>
         <tr>
             <td>❌</td>
@@ -182,12 +181,12 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/curly/">curly</a></td>
-            <td>if 后面必须有 {，除非是单行 if</td>
+            <td><code>if</code> 后面必须有 <code>{</code>，除非是单行 <code>if</code></td>
         </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/forin/">forin</a></td>
-            <td>for in 内部必须有 hasOwnProperty</td>
+            <td><code>for in</code> 内部必须有 <code>hasOwnProperty</code></td>
         </tr>
         <tr>
             <td>❌</td>
@@ -197,12 +196,12 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/label-position/">label-position</a></td>
-            <td>只允许在 do for while switch 中使用 label</td>
+            <td>只允许在 <code>do</code> <code>for</code> <code>while</code> <code>switch</code> 中使用 <code>label</code></td>
         </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-arg/">no-arg</a></td>
-            <td>禁止使用 arguments.callee</td>
+            <td>禁止使用 <code>arguments.callee</code></td>
         </tr>
         <tr>
             <td>❌</td>
@@ -217,27 +216,27 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-console/">no-console</a></td>
-            <td>禁止使用 console</td>
+            <td>禁止使用 <code>console</code></td>
         </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-construct/">no-construct</a></td>
-            <td>禁止使用 new 来生成 String, Number 或 Boolean</td>
+            <td>禁止使用 <code>new</code> 来生成 <code>String</code>, <code>Number</code> 或 <code>Boolean</code></td>
         </tr>
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-debugger/">no-debugger</a></td>
-            <td>禁止使用 debugger</td>
+            <td>禁止使用 <code>debugger</code></td>
         </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-duplicate-super/">no-duplicate-super</a></td>
-            <td>禁止 super 在一个构造函数中出现两次</td>
+            <td>禁止 <code>super</code> 在一个构造函数中出现两次</td>
         </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-duplicate-switch-case/">no-duplicate-switch-case</a></td>
-            <td>禁止在 switch 语句中出现重复测试表达式的 case</td>
+            <td>禁止在 <code>switch</code> 语句中出现重复测试表达式的 <code>case</code></td>
         </tr>
         <tr>
             <td>✅</td>
@@ -247,32 +246,32 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-dynamic-delete/">no-dynamic-delete</a></td>
-            <td>禁止 delete 动态的值</td>
+            <td>禁止 <code>delete</code> 动态的值</td>
         </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-empty/">no-empty</a></td>
-            <td>禁止出现空代码块，允许 catch 是空代码块</td>
+            <td>禁止出现空代码块，允许 <code>catch</code> 是空代码块</td>
         </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-eval/">no-eval</a></td>
-            <td>禁止使用 eval</td>
+            <td>禁止使用 <code>eval</code></td>
         </tr>
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-floating-promises/">no-floating-promises</a></td>
-            <td>函数返回值为 Promise 时，必须被处理</td>
+            <td>函数返回值为 <code>Promise</code> 时，必须被处理</td>
         </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-for-in-array/">no-for-in-array</a></td>
-            <td>禁止对 array 使用 for in 循环</td>
+            <td>禁止对 <code>array</code> 使用 <code>for in</code> 循环</td>
         </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-implicit-dependencies/">no-implicit-dependencies</a></td>
-            <td>禁止引入 package.json 中不存在的模块</td>
+            <td>禁止引入 <code>package.json</code> 中不存在的模块</td>
         </tr>
         <tr>
             <td>❌</td>
@@ -282,32 +281,32 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-invalid-template-strings/">no-invalid-template-strings</a></td>
-            <td>禁止在非模版字符串中出现 ${}</td>
+            <td>禁止在非模版字符串中出现 <code>${}</code></td>
         </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-invalid-this/">no-invalid-this</a></td>
-            <td>禁止在类外面使用 this</td>
+            <td>禁止在类外面使用 <code>this</code></td>
         </tr>
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-misused-new/">no-misused-new</a></td>
-            <td>禁止在接口中定义 constructor，或在类中定义 new</td>
+            <td>禁止在接口中定义 <code>constructor</code>，或在类中定义 <code>new</code></td>
         </tr>
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-null-keyword/">no-null-keyword</a></td>
-            <td>禁止使用 null</td>
+            <td>禁止使用 <code>null</code></td>
         </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-object-literal-type-assertion/">no-object-literal-type-assertion</a></td>
-            <td>禁止对对象字面量进行类型断言（断言成 any 是允许的）</td>
+            <td>禁止对对象字面量进行类型断言（断言成 <code>any</code> 是允许的）</td>
         </tr>
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-return-await/">no-return-await</a></td>
-            <td>禁止没必要的 return await</td>
+            <td>禁止没必要的 <code>return await</code></td>
         </tr>
         <tr>
             <td>❌</td>
@@ -317,37 +316,37 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-sparse-arrays/">no-sparse-arrays</a></td>
-            <td>禁止在数组中出现连续的逗号，如 let foo = [,,]</td>
+            <td>禁止在数组中出现连续的逗号，如 <code>let foo = [,,]</code></td>
         </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-string-literal/">no-string-literal</a></td>
-            <td>禁止出现 foo['bar']，必须写成 foo.bar</td>
+            <td>禁止出现 <code>foo['bar']</code>，必须写成 <code>foo.bar</code></td>
         </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-string-throw/">no-string-throw</a></td>
-            <td>禁止 throw 字符串，必须 throw 一个 Error 对象</td>
+            <td>禁止 <code>throw</code> 字符串，必须 <code>throw</code> 一个 <code>Error</code> 对象</td>
         </tr>
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-submodule-imports/">no-submodule-imports</a></td>
-            <td>禁止 import 模块的子文件</td>
+            <td>禁止 <code>import</code> 模块的子文件</td>
         </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-switch-case-fall-through/">no-switch-case-fall-through</a></td>
-            <td>switch 的 case 必须 return 或 break</td>
+            <td><code>switch</code> 的 <code>case</code> 必须 <code>return</code> 或 <code>break</code></td>
         </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-this-assignment/">no-this-assignment</a></td>
-            <td>禁止将 this 赋值给其他变量，除非是解构赋值</td>
+            <td>禁止将 <code>this</code> 赋值给其他变量，除非是解构赋值</td>
         </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-unbound-method/">no-unbound-method</a></td>
-            <td>使用实例的方法时，必须 bind 到实例上</td>
+            <td>使用实例的方法时，必须 <code>bind</code> 到实例上</td>
         </tr>
         <tr>
             <td>❌</td>
@@ -357,12 +356,12 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-unsafe-any/">no-unsafe-any</a></td>
-            <td>禁止取用一个类型为 any 的对象的属性</td>
+            <td>禁止取用一个类型为 <code>any</code> 的对象的属性</td>
         </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-unsafe-finally/">no-unsafe-finally</a></td>
-            <td>禁止 finally 内出现 return, continue, break, throw 等</td>
+            <td>禁止 <code>finally</code> 内出现 <code>return</code>, <code>continue</code>, <code>break</code>, <code>throw</code> 等</td>
         </tr>
         <tr>
             <td>✅</td>
@@ -377,27 +376,27 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-var-keyword/">no-var-keyword</a></td>
-            <td>禁止使用 var</td>
+            <td>禁止使用 <code>var</code></td>
         </tr>
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-void-expression/">no-void-expression</a></td>
-            <td>禁止返回值为 void 类型</td>
+            <td>禁止返回值为 <code>void</code> 类型</td>
         </tr>
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/prefer-conditional-expression/">prefer-conditional-expression</a></td>
-            <td>可以用三元表达式时，就不用 if else</td>
+            <td>可以用三元表达式时，就不用 <code>if else</code></td>
         </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/prefer-object-spread/">prefer-object-spread</a></td>
-            <td>使用 { ...foo, bar: 1 } 代替 Object.assign({}, foo, { bar: 1 })</td>
+            <td>使用 <code>{ ...foo, bar: 1 }</code> 代替 <code>Object.assign({}, foo, { bar: 1 })</code></td>
         </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/radix/">radix</a></td>
-            <td>parseInt 必须传入第二个参数</td>
+            <td><code>parseInt</code> 必须传入第二个参数</td>
         </tr>
         <tr>
             <td>❌</td>
@@ -412,22 +411,22 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/strict-type-predicates/">strict-type-predicates</a></td>
-            <td>禁止出现永远为 true 或永远为 false 的条件判断（通过类型预测出一个表达式为 true 还是 false）</td>
+            <td>禁止出现永远为 <code>true</code> 或永远为 <code>false</code> 的条件判断（通过类型预测出一个表达式为 <code>true</code> 还是 <code>false</code>）</td>
         </tr>
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/switch-default/">switch-default</a></td>
-            <td>switch 语句必须有 default</td>
+            <td><code>switch</code> 语句必须有 <code>default</code></td>
         </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/triple-equals/">triple-equals</a></td>
-            <td>必须使用 === 或 !==，禁止使用 == 或 !=</td>
+            <td>必须使用 <code>===</code> 或 <code>!==</code>，禁止使用 <code>==</code> 或 <code>!=</code></td>
         </tr>
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/typeof-compare/">typeof-compare</a></td>
-            <td>typeof 表达式比较的对象必须是 'undefined', 'object', 'boolean', 'number', 'string', 'function' 或 'symbol'</td>
+            <td><code>typeof</code> 表达式比较的对象必须是 <code>'undefined'</code>, <code>'object'</code>, <code>'boolean'</code>, <code>'number'</code>, <code>'string'</code>, <code>'function'</code> 或 <code>'symbol'</code></td>
         </tr>
         <tr>
             <td>❌</td>
@@ -437,13 +436,13 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/use-isnan/">use-isnan</a></td>
-            <td>必须使用 isNaN(foo) 而不是 foo === NaN</td>
+            <td>必须使用 <code>isNaN(foo)</code> 而不是 <code>foo === NaN</code></td>
         </tr>
         <tr>
+            <td colspan="3">　</td>
         </tr>
         <tr>
-            <td></td>
-            <td><strong>可维护性</strong></td>
+            <td colspan="2"><strong>可维护性</strong></td>
             <td>增强代码可维护性的规则</td>
         </tr>
         <tr>
@@ -454,7 +453,7 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/deprecation/">deprecation</a></td>
-            <td>禁止使用废弃（被标识了 @deprecated）的 API</td>
+            <td>禁止使用废弃（被标识了 <code>@deprecated</code>）的 API</td>
         </tr>
         <tr>
             <td>✅</td>
@@ -489,37 +488,37 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-default-export/">no-default-export</a></td>
-            <td>禁止使用 default export</td>
+            <td>禁止使用 <code>default export</code></td>
         </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-duplicate-imports/">no-duplicate-imports</a></td>
-            <td>禁止出现重复的 import</td>
+            <td>禁止出现重复的 <code>import</code></td>
         </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-mergeable-namespace/">no-mergeable-namespace</a></td>
-            <td>禁止一个文件中出现多个相同的 namespace</td>
+            <td>禁止一个文件中出现多个相同的 <code>namespace</code></td>
         </tr>
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-require-imports/">no-require-imports</a></td>
-            <td>禁止使用 require</td>
+            <td>禁止使用 <code>require</code></td>
         </tr>
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/object-literal-sort-keys/">object-literal-sort-keys</a></td>
-            <td>对象字面量必须按 key 排序</td>
+            <td>对象字面量必须按 <code>key</code> 排序</td>
         </tr>
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/prefer-const/">prefer-const</a></td>
-            <td>申明后不再被修改的变量必须使用 const 来申明</td>
+            <td>申明后不再被修改的变量必须使用 <code>const</code> 来申明</td>
         </tr>
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/prefer-readonly/">prefer-readonly</a></td>
-            <td>如果私有变量只在构造函数中被赋值，则必须使用 readonly 修饰符</td>
+            <td>如果私有变量只在构造函数中被赋值，则必须使用 <code>readonly</code> 修饰符</td>
         </tr>
         <tr>
             <td>✅</td>
@@ -527,10 +526,10 @@ npm install --save-dev tslint typescript tslint-config-alloy
             <td>限制对象、数组、解构赋值等的最后一项末尾是否需要逗号</td>
         </tr>
         <tr>
+            <td colspan="3">　</td>
         </tr>
         <tr>
-            <td></td>
-            <td><strong>代码风格</strong></td>
+            <td colspan="2"><strong>代码风格</strong></td>
             <td>与代码风格相关的规则</td>
         </tr>
         <tr>
@@ -541,7 +540,7 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/array-type/">array-type</a></td>
-            <td>限制必须使用 T[] 或 Array<T> 之中的一种来定义数组的类型</td>
+            <td>限制必须使用 <code>T[]</code> 或 <code>Array&lt;T&gt;</code> 之中的一种来定义数组的类型</td>
         </tr>
         <tr>
             <td>✅</td>
@@ -551,12 +550,12 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/arrow-return-shorthand/">arrow-return-shorthand</a></td>
-            <td>箭头函数的函数体只有 return 语句的时候，必须简写</td>
+            <td>箭头函数的函数体只有 <code>return</code> 语句的时候，必须简写</td>
         </tr>
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/binary-expression-operand-order/">binary-expression-operand-order</a></td>
-            <td>数字字面量必须在加号的右边，即禁止 1 + x</td>
+            <td>数字字面量必须在加号的右边，即禁止 <code>1 + x</code></td>
         </tr>
         <tr>
             <td>✅</td>
@@ -596,12 +595,12 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/import-spacing/">import-spacing</a></td>
-            <td>import 语句中，关键字之间的间距必须是一个空格</td>
+            <td><code>import</code> 语句中，关键字之间的间距必须是一个空格</td>
         </tr>
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/interface-name/">interface-name</a></td>
-            <td>接口名称必须已 I 开头</td>
+            <td>接口名称必须已 <code>I</code> 开头</td>
         </tr>
         <tr>
             <td>✅</td>
@@ -616,17 +615,17 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/match-default-export-name/">match-default-export-name</a></td>
-            <td>import 的名称必须和 export default 的名称一致</td>
+            <td><code>import</code> 的名称必须和 <code>export default</code> 的名称一致</td>
         </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/new-parens/">new-parens</a></td>
-            <td>new 后面只必须有一个空格</td>
+            <td><code>new</code> 后面只必须有一个空格</td>
         </tr>
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/newline-before-return/">newline-before-return</a></td>
-            <td>return 语句前必须有空行</td>
+            <td><code>return</code> 语句前必须有空行</td>
         </tr>
         <tr>
             <td>✅</td>
@@ -636,12 +635,12 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-angle-bracket-type-assertion/">no-angle-bracket-type-assertion</a></td>
-            <td>类型断言必须使用 as Type，禁止使用 <Type></td>
+            <td>类型断言必须使用 <code>as Type</code>，禁止使用 <code>&lt;Type&gt;</code></td>
         </tr>
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-boolean-literal-compare/">no-boolean-literal-compare</a></td>
-            <td>禁止变量与 true 或 false 比较</td>
+            <td>禁止变量与 <code>true</code> 或 <code>false</code> 比较</td>
         </tr>
         <tr>
             <td>✅</td>
@@ -676,12 +675,12 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-unnecessary-callback-wrapper/">no-unnecessary-callback-wrapper</a></td>
-            <td>禁止没必要的函数调用，如 x => f(x) 应该简写为 f</td>
+            <td>禁止没必要的函数调用，如 <code>x =&gt; f(x)</code> 应该简写为 <code>f</code></td>
         </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-unnecessary-initializer/">no-unnecessary-initializer</a></td>
-            <td>禁止变量定义时赋值为 undefined</td>
+            <td>禁止变量定义时赋值为 <code>undefined</code></td>
         </tr>
         <tr>
             <td>❌</td>
@@ -691,7 +690,7 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/number-literal-format/">number-literal-format</a></td>
-            <td>小数必须以 0. 开头，禁止以 . 开头，并且不能以 0 结尾</td>
+            <td>小数必须以 <code>0.</code> 开头，禁止以 <code>.</code> 开头，并且不能以 <code>0</code> 结尾</td>
         </tr>
         <tr>
             <td>❌</td>
@@ -701,37 +700,37 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/object-literal-shorthand/">object-literal-shorthand</a></td>
-            <td>必须使用 a = {b} 而不是 a = {b: b}</td>
+            <td>必须使用 <code>a = {b}</code> 而不是 <code>a = {b: b}</code></td>
         </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/one-line/">one-line</a></td>
-            <td>if 后的 { 禁止换行</td>
+            <td><code>if</code> 后的 <code>{</code> 禁止换行</td>
         </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/one-variable-per-declaration/">one-variable-per-declaration</a></td>
-            <td>变量申明必须每行一个，for 循环的初始条件中除外</td>
+            <td>变量申明必须每行一个，<code>for</code> 循环的初始条件中除外</td>
         </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/ordered-imports/">ordered-imports</a></td>
-            <td>import 必须排序</td>
+            <td><code>import</code> 必须排序</td>
         </tr>
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/prefer-function-over-method/">prefer-function-over-method</a></td>
-            <td>类中没有使用 this 的方法应该提取成类外的函数</td>
+            <td>类中没有使用 <code>this</code> 的方法应该提取成类外的函数</td>
         </tr>
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/prefer-method-signature/">prefer-method-signature</a></td>
-            <td>必须使用 foo(): void 而不是 foo: () => void</td>
+            <td>必须使用 <code>foo(): void</code> 而不是 <code>foo: () =&gt; void</code></td>
         </tr>
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/prefer-switch/">prefer-switch</a></td>
-            <td>当 if 中只有 === 时，必须使用 switch 替换 if</td>
+            <td>当 <code>if</code> 中只有 <code>===</code> 时，必须使用 <code>switch</code> 替换 <code>if</code></td>
         </tr>
         <tr>
             <td>❌</td>
@@ -741,7 +740,7 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/prefer-while/">prefer-while</a></td>
-            <td>当没有初始值的时候，必须使用 while 而不是 for</td>
+            <td>当没有初始值的时候，必须使用 <code>while</code> 而不是 <code>for</code></td>
         </tr>
         <tr>
             <td>✅</td>
@@ -751,7 +750,7 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/return-undefined/">return-undefined</a></td>
-            <td>使用 return; 而不是 return undefined;</td>
+            <td>使用 <code>return;</code> 而不是 <code>return undefined;</code></td>
         </tr>
         <tr>
             <td>✅</td>
@@ -771,7 +770,7 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/switch-final-break/">switch-final-break</a></td>
-            <td>switch 的最后一项禁止有 break</td>
+            <td><code>switch</code> 的最后一项禁止有 <code>break</code></td>
         </tr>
         <tr>
             <td>✅</td>

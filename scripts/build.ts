@@ -132,14 +132,16 @@ module.exports = {
                 if (lastCategory !== ruleJson.meta.category) {
                     ruleHTML += `
         <tr>
-            <td></td>
-            <td><strong>${Build.RuleCategoryDescription[ruleJson.meta.category].title}</strong></td>
+            <td colspan="2"><strong>${
+                Build.RuleCategoryDescription[ruleJson.meta.category].title
+            }</strong></td>
             <td>${Build.RuleCategoryDescription[ruleJson.meta.category].description}</td>
         </tr>`;
                     if (lastCategory !== '') {
                         ruleHTML =
                             `
         <tr>
+            <td colspan="3">　</td>
         </tr>` + ruleHTML;
                     }
                     lastCategory = ruleJson.meta.category;
@@ -149,7 +151,7 @@ module.exports = {
         <tr>
             <td>${this.renderCheckMark(ruleJson.rules[ruleName])}</td>
             <td><a href="https://palantir.github.io/tslint/rules/${ruleName}/">${ruleName}</a></td>
-            <td>${ruleJson.meta.description.replace(/`/g, '').replace(/\\n/g, '<br/>')}</td>
+            <td>${this.parseCode(ruleJson.meta.description)}</td>
         </tr>`;
                 return ruleHTML;
             })
@@ -159,7 +161,7 @@ module.exports = {
 <table>
     <thead>
         <tr>
-            <th>开关</th>
+            <th width="60">开关</th>
             <th>名称</th>
             <th>描述</th>
         </tr>
@@ -238,6 +240,26 @@ module.exports = {
             return '❌';
         }
         return '✅';
+    }
+
+    private parseCode(str: string) {
+        let isOpen = false;
+        return str
+            .replace(/\</g, '&lt;')
+            .replace(/\>/g, '&gt;')
+            .replace(/\\n/g, '<br/>')
+            .split('')
+            .map((letter) => {
+                if (letter !== '`') {
+                    return letter;
+                }
+                isOpen = !isOpen;
+                if (isOpen) {
+                    return '<code>';
+                }
+                return '</code>';
+            })
+            .join('');
     }
 }
 
