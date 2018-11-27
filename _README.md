@@ -33,7 +33,7 @@ npm install --save-dev tslint typescript tslint-config-alloy
 
 ## 规则列表
 
-RULE_TABLE
+RULE_CONTENT
 
 ### CLI 中运行
 

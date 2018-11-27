@@ -29,19 +29,19 @@ class Build {
     public static RuleCategoryDescription = {
         'typescript-specific': {
             title: 'TypeScript 相关',
-            description: '与 TypeScript 特性相关的规则'
+            description: '与 TypeScript 特性相关的规则。'
         },
         functionality: {
             title: '功能性检查',
-            description: '找出可能的错误，以及可能会产生 bug 的编码习惯'
+            description: '找出可能的错误，以及可能会产生 bug 的编码习惯。'
         },
         maintainability: {
             title: '可维护性',
-            description: '增强代码可维护性的规则'
+            description: '增强代码可维护性的规则。'
         },
         style: {
             title: '代码风格',
-            description: '与代码风格相关的规则'
+            description: '与代码风格相关的规则。'
         }
     };
 
@@ -125,34 +125,66 @@ module.exports = {
      * 生成 README.md 文件
      */
     public buildREADME() {
-        let lastCategory = '';
+        const typescriptSpecificTable = this.renderCategoryTable('typescript-specific');
+        const functionalityTable = this.renderCategoryTable('functionality');
+        const maintainabilityTable = this.renderCategoryTable('maintainability');
+        const styleTable = this.renderCategoryTable('style');
+
+        const ruleContent = `
+### ${Build.RuleCategoryDescription['typescript-specific'].title}
+
+${Build.RuleCategoryDescription['typescript-specific'].description}
+
+${typescriptSpecificTable}
+
+### ${Build.RuleCategoryDescription.functionality.title}
+
+${Build.RuleCategoryDescription.functionality.description}
+
+${functionalityTable}
+
+### ${Build.RuleCategoryDescription.maintainability.title}
+
+${Build.RuleCategoryDescription.maintainability.description}
+
+${maintainabilityTable}
+
+### ${Build.RuleCategoryDescription.style.title}
+
+${Build.RuleCategoryDescription.style.description}
+
+${styleTable}
+        `;
+
+        const READMETemplate = fs.readFileSync(path.resolve(__dirname, '../_README.md'), 'utf-8');
+
+        const READMEContent = READMETemplate.replace('RULE_CONTENT', ruleContent);
+
+        fs.writeFileSync(
+            path.resolve(__dirname, '../README.md'),
+            // 使用 prettier 格式化文件内容
+            prettier.format(READMEContent, {
+                ...require('../prettier.config'),
+                parser: 'markdown'
+            }),
+            'utf-8'
+        );
+    }
+
+    /**
+     * 生成某一个分类的列表
+     */
+    private renderCategoryTable(category: string) {
         const ruleListHTML = this.ruleList
+            .filter((ruleJson) => ruleJson.meta.category === category)
             .map((ruleJson) => {
-                let ruleHTML = '';
-                if (lastCategory !== ruleJson.meta.category) {
-                    ruleHTML += `
-        <tr>
-            <td></td>
-            <td><strong>${Build.RuleCategoryDescription[ruleJson.meta.category].title}</strong></td>
-            <td>${Build.RuleCategoryDescription[ruleJson.meta.category].description}</td>
-        </tr>`;
-                    if (lastCategory !== '') {
-                        ruleHTML =
-                            `
-        <tr>
-            <td colspan="3">　</td>
-        </tr>` + ruleHTML;
-                    }
-                    lastCategory = ruleJson.meta.category;
-                }
                 const ruleName = Object.keys(ruleJson.rules)[0];
-                ruleHTML += `
+                return `
         <tr>
             <td>${this.renderCheckMark(ruleJson.rules[ruleName])}</td>
             <td><a href="https://palantir.github.io/tslint/rules/${ruleName}/">${ruleName}</a></td>
             <td>${this.parseCode(ruleJson.meta.description)}</td>
         </tr>`;
-                return ruleHTML;
             })
             .join('');
 
@@ -170,19 +202,7 @@ module.exports = {
 </table>
         `;
 
-        const READMETemplate = fs.readFileSync(path.resolve(__dirname, '../_README.md'), 'utf-8');
-
-        const READMEContent = READMETemplate.replace('RULE_TABLE', tableHTML);
-
-        fs.writeFileSync(
-            path.resolve(__dirname, '../README.md'),
-            // 使用 prettier 格式化文件内容
-            prettier.format(READMEContent, {
-                ...require('../prettier.config'),
-                parser: 'markdown'
-            }),
-            'utf-8'
-        );
+        return tableHTML;
     }
 
     /**

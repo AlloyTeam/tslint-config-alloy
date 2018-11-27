@@ -33,6 +33,10 @@ npm install --save-dev tslint typescript tslint-config-alloy
 
 ## 规则列表
 
+### TypeScript 相关
+
+与 TypeScript 特性相关的规则。
+
 <table>
     <thead>
         <tr>
@@ -42,11 +46,6 @@ npm install --save-dev tslint typescript tslint-config-alloy
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td></td>
-            <td><strong>TypeScript 相关</strong></td>
-            <td>与 TypeScript 特性相关的规则</td>
-        </tr>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/adjacent-overload-signatures/">adjacent-overload-signatures</a></td>
@@ -157,14 +156,23 @@ npm install --save-dev tslint typescript tslint-config-alloy
             <td><a href="https://palantir.github.io/tslint/rules/unified-signatures/">unified-signatures</a></td>
             <td>函数重载时，若能通过联合类型将两个函数的类型声明合为一个，则使用联合类型而不是两个函数声明</td>
         </tr>
+    </tbody>
+</table>
+
+
+### 功能性检查
+
+找出可能的错误，以及可能会产生 bug 的编码习惯。
+
+<table>
+    <thead>
         <tr>
-            <td colspan="3">　</td>
+            <th width="60">开关</th>
+            <th>名称</th>
+            <th>描述</th>
         </tr>
-        <tr>
-            <td></td>
-            <td><strong>功能性检查</strong></td>
-            <td>找出可能的错误，以及可能会产生 bug 的编码习惯</td>
-        </tr>
+    </thead>
+    <tbody>
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/await-promise/">await-promise</a></td>
@@ -440,14 +448,23 @@ npm install --save-dev tslint typescript tslint-config-alloy
             <td><a href="https://palantir.github.io/tslint/rules/use-isnan/">use-isnan</a></td>
             <td>必须使用 <code>isNaN(foo)</code> 而不是 <code>foo === NaN</code></td>
         </tr>
+    </tbody>
+</table>
+
+
+### 可维护性
+
+增强代码可维护性的规则。
+
+<table>
+    <thead>
         <tr>
-            <td colspan="3">　</td>
+            <th width="60">开关</th>
+            <th>名称</th>
+            <th>描述</th>
         </tr>
-        <tr>
-            <td></td>
-            <td><strong>可维护性</strong></td>
-            <td>增强代码可维护性的规则</td>
-        </tr>
+    </thead>
+    <tbody>
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/cyclomatic-complexity/">cyclomatic-complexity</a></td>
@@ -528,14 +545,23 @@ npm install --save-dev tslint typescript tslint-config-alloy
             <td><a href="https://palantir.github.io/tslint/rules/trailing-comma/">trailing-comma</a></td>
             <td>限制对象、数组、解构赋值等的最后一项末尾是否需要逗号</td>
         </tr>
+    </tbody>
+</table>
+
+
+### 代码风格
+
+与代码风格相关的规则。
+
+<table>
+    <thead>
         <tr>
-            <td colspan="3">　</td>
+            <th width="60">开关</th>
+            <th>名称</th>
+            <th>描述</th>
         </tr>
-        <tr>
-            <td></td>
-            <td><strong>代码风格</strong></td>
-            <td>与代码风格相关的规则</td>
-        </tr>
+    </thead>
+    <tbody>
         <tr>
             <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/align/">align</a></td>
@@ -793,6 +819,7 @@ npm install --save-dev tslint typescript tslint-config-alloy
         </tr>
     </tbody>
 </table>
+        
 
 
 ### CLI 中运行
