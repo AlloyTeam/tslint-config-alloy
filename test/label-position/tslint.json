@@ -4,7 +4,7 @@
     },
     "meta": {
         "category": "functionality",
-        "description": "只允许在 `do` `for` `while` `switch` 中使用 `label`",
+        "description": "只允许在 `do`, `for`, `while` 或 `switch` 中使用 `label`",
         "reason": "在任何情况都不应该使用 `label`"
     }
 }

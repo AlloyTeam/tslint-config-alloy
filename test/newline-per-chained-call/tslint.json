@@ -1,10 +1,11 @@
 {
     "rules": {
-        "newline-per-chained-call": true
+        "newline-per-chained-call": false
     },
     "meta": {
         "category": "style",
         "description": "链式调用时，每次调用都必须占用一行",
+        "reason": "没必要限制",
         "prettier": true
     }
 }

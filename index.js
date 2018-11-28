@@ -248,7 +248,7 @@ module.exports = {
         'import-blacklist': false,
         /**
          * @category functionality
-         * @description 只允许在 do for while switch 中使用 label
+         * @description 只允许在 do, for, while 或 switch 中使用 label
          * @reason 在任何情况都不应该使用 label
          */
         'label-position': false,
@@ -271,7 +271,7 @@ module.exports = {
         /**
          * @category functionality
          * @description 禁止使用 console
-         * @reason 没必要禁止，禁止的话会让 autofixOnSave 很不方便
+         * @reason 没必要禁止，会让 autofixOnSave 很不方便
          */
         'no-console': false,
         /**
@@ -282,7 +282,7 @@ module.exports = {
         /**
          * @category functionality
          * @description 禁止使用 debugger
-         * @reason 没必要禁止，禁止的话会让 autofixOnSave 很不方便
+         * @reason 没必要禁止，会让 autofixOnSave 很不方便
          */
         'no-debugger': false,
         /**
@@ -640,7 +640,7 @@ module.exports = {
          * @has-fixer 支持自动修复
          * @prettier 可交由 prettier 控制
          */
-        'trailing-comma': [true, { multiline: 'always', singleline: 'never' }],
+        'trailing-comma': [true, { multiline: 'never', singleline: 'never' }],
         /**
          * @category style
          * @description 变量定义需要竖向对其
@@ -767,9 +767,10 @@ module.exports = {
         /**
          * @category style
          * @description 链式调用时，每次调用都必须占用一行
+         * @reason 没必要限制
          * @prettier 可交由 prettier 控制
          */
-        'newline-per-chained-call': true,
+        'newline-per-chained-call': false,
         /**
          * @category style
          * @description 类型断言必须使用 as Type，禁止使用 <Type>

@@ -1,8 +1,6 @@
 # AlloyTeam TSLint 规则
 
-与 [AlloyTeam ESLint 规则](https://github.com/AlloyTeam/eslint-config-alloy)类似，我们仔细研读了 TSLint 所有的配置项，定制出了心目中的「完美」TSLint 配置。
-
-具体规则和相应解释请看[源码](https://github.com/AlloyTeam/tslint-config-alloy/blob/master/index.js)。
+一套完整的 TSLint 规则，以及对每条规则的释义。
 
 ## 使用方法
 
@@ -94,8 +92,8 @@ Prettier 的配置文件 `prettier.config.js` 可以参考这个：
 ```js
 // prettier.config.js or .prettierrc.js
 module.exports = {
-    // 一行最多 160 字符
-    printWidth: 160,
+    // 一行最多 100 字符
+    printWidth: 100,
     // 使用 4 个空格缩进
     tabWidth: 4,
     // 不使用缩进符，而使用空格
@@ -106,8 +104,8 @@ module.exports = {
     singleQuote: true,
     // jsx 不使用单引号，而使用双引号
     jsxSingleQuote: false,
-    // 末尾需要逗号
-    trailingComma: 'all',
+    // 末尾不需要逗号
+    trailingComma: 'none',
     // 大括号内的首尾需要空格
     bracketSpacing: true,
     // jsx 标签的反尖括号需要换行

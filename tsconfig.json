@@ -1,6 +1,9 @@
 {
     "compilerOptions": {
         "target": "es2018",
+        "module": "commonjs",
+        "resolveJsonModule": true,
+        "jsx": "React",
         // "noImplicitAny": true,
         "noImplicitThis": true,
         "alwaysStrict": true,
@@ -10,5 +13,5 @@
         "noUnusedLocals": true,
         "noUnusedParameters": true
     },
-    "include": ["test/index.ts", "scripts/buildREADME.ts"]
+    "include": ["test/index.ts", "scripts/build.ts", "site/**/*.ts", "site/**/*.tsx"]
 }

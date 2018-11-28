@@ -2,13 +2,18 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 import * as prettier from 'prettier';
+import * as Prism from 'prismjs';
+// tslint:disable-next-line:no-import-side-effect
+import 'prismjs/components/prism-typescript';
+
+import { parseDescription } from '../site/utils';
 
 interface RuleJson {
     rules: {
         [propName: string]: boolean | any[];
     };
     meta: {
-        category: keyof typeof Build.RuleCategoryPriority;
+        category: keyof typeof Builder.RuleCategoryPriority;
         description: string;
         reason?: string;
         'ts-only'?: boolean;
@@ -18,7 +23,7 @@ interface RuleJson {
     };
 }
 
-class Build {
+class Builder {
     public static RuleCategoryPriority = {
         'typescript-specific': 0,
         functionality: 1,
@@ -61,7 +66,8 @@ class Build {
         const tslintConfigList = this.ruleList.map((ruleJson) => {
             const ruleName = Object.keys(ruleJson.rules)[0];
             const comments = Object.keys(ruleJson.meta).map((key) => {
-                let metaItemValue: string = Build.CommentMap[key] || ruleJson.meta[key].toString();
+                let metaItemValue: string =
+                    Builder.CommentMap[key] || ruleJson.meta[key].toString();
                 return `@${key} ${metaItemValue
                     // 去掉 `
                     .replace(/`/g, '')
@@ -122,6 +128,92 @@ module.exports = {
     }
 
     /**
+     * 生成 site/tslint.json
+     */
+    public buildSiteTSLintRulesJson() {
+        const tslintJson = {};
+
+        this.ruleList.forEach((ruleJson) => {
+            const ruleName = this.getRuleName(ruleJson);
+            tslintJson[ruleName] = ruleJson.rules[ruleName];
+        });
+
+        fs.writeFileSync(
+            path.resolve(__dirname, '../site/tslint-rules.json'),
+            // 使用 prettier 格式化文件内容
+            prettier.format(JSON.stringify(tslintJson), {
+                ...require('../prettier.config'),
+                parser: 'json'
+            }),
+            'utf-8'
+        );
+    }
+
+    /**
+     * 生成 site/tslint-meta.json
+     */
+    public buildSiteTSLintMetaJson() {
+        const tslintMetaJson = {};
+
+        this.ruleList.forEach((ruleJson) => {
+            const ruleName = this.getRuleName(ruleJson);
+            tslintMetaJson[ruleName] = ruleJson.meta;
+        });
+
+        fs.writeFileSync(
+            path.resolve(__dirname, '../site/tslint-meta.json'),
+            // 使用 prettier 格式化文件内容
+            prettier.format(JSON.stringify(tslintMetaJson), {
+                ...require('../prettier.config'),
+                parser: 'json'
+            }),
+            'utf-8'
+        );
+    }
+
+    /**
+     * 生成 site/tslint-tests.json
+     */
+    public buildSiteTSLintTestsJson() {
+        const tslintTestsJson = {};
+
+        this.ruleList.forEach((ruleJson) => {
+            const ruleName = this.getRuleName(ruleJson);
+
+            const testGoodPath = path.resolve(__dirname, '../test/', ruleName, 'good.ts');
+            const testBadPath = path.resolve(__dirname, '../test/', ruleName, 'bad.ts');
+            if (fs.existsSync(testGoodPath)) {
+                if (!tslintTestsJson[ruleName]) {
+                    tslintTestsJson[ruleName] = {};
+                }
+                tslintTestsJson[ruleName].good = Prism.highlight(
+                    fs.readFileSync(testGoodPath, 'utf-8'),
+                    Prism.languages.typescript
+                );
+            }
+            if (fs.existsSync(testBadPath)) {
+                if (!tslintTestsJson[ruleName]) {
+                    tslintTestsJson[ruleName] = {};
+                }
+                tslintTestsJson[ruleName].bad = Prism.highlight(
+                    fs.readFileSync(testBadPath, 'utf-8'),
+                    Prism.languages.typescript
+                );
+            }
+        });
+
+        fs.writeFileSync(
+            path.resolve(__dirname, '../site/tslint-tests.json'),
+            // 使用 prettier 格式化文件内容
+            prettier.format(JSON.stringify(tslintTestsJson), {
+                ...require('../prettier.config'),
+                parser: 'json'
+            }),
+            'utf-8'
+        );
+    }
+
+    /**
      * 生成 README.md 文件
      */
     public buildREADME() {
@@ -131,27 +223,27 @@ module.exports = {
         const styleTable = this.renderCategoryTable('style');
 
         const ruleContent = `
-### ${Build.RuleCategoryDescription['typescript-specific'].title}
+### ${Builder.RuleCategoryDescription['typescript-specific'].title}
 
-${Build.RuleCategoryDescription['typescript-specific'].description}
+${Builder.RuleCategoryDescription['typescript-specific'].description}
 
 ${typescriptSpecificTable}
 
-### ${Build.RuleCategoryDescription.functionality.title}
+### ${Builder.RuleCategoryDescription.functionality.title}
 
-${Build.RuleCategoryDescription.functionality.description}
+${Builder.RuleCategoryDescription.functionality.description}
 
 ${functionalityTable}
 
-### ${Build.RuleCategoryDescription.maintainability.title}
+### ${Builder.RuleCategoryDescription.maintainability.title}
 
-${Build.RuleCategoryDescription.maintainability.description}
+${Builder.RuleCategoryDescription.maintainability.description}
 
 ${maintainabilityTable}
 
-### ${Build.RuleCategoryDescription.style.title}
+### ${Builder.RuleCategoryDescription.style.title}
 
-${Build.RuleCategoryDescription.style.description}
+${Builder.RuleCategoryDescription.style.description}
 
 ${styleTable}
         `;
@@ -183,7 +275,7 @@ ${styleTable}
         <tr>
             <td>${this.renderCheckMark(ruleJson.rules[ruleName])}</td>
             <td><a href="https://palantir.github.io/tslint/rules/${ruleName}/">${ruleName}</a></td>
-            <td>${this.parseCode(ruleJson.meta.description)}</td>
+            <td>${parseDescription(ruleJson.meta.description)}</td>
         </tr>`;
             })
             .join('');
@@ -228,14 +320,14 @@ ${styleTable}
                 const bRuleCategory = bRuleJson.meta.category;
 
                 if (
-                    Build.RuleCategoryPriority[aRuleCategory] >
-                    Build.RuleCategoryPriority[bRuleCategory]
+                    Builder.RuleCategoryPriority[aRuleCategory] >
+                    Builder.RuleCategoryPriority[bRuleCategory]
                 ) {
                     return 1;
                 }
                 if (
-                    Build.RuleCategoryPriority[aRuleCategory] <
-                    Build.RuleCategoryPriority[bRuleCategory]
+                    Builder.RuleCategoryPriority[aRuleCategory] <
+                    Builder.RuleCategoryPriority[bRuleCategory]
                 ) {
                     return -1;
                 }
@@ -260,28 +352,11 @@ ${styleTable}
         }
         return '✅';
     }
-
-    private parseCode(str: string) {
-        let isOpen = false;
-        return str
-            .replace(/\</g, '&lt;')
-            .replace(/\>/g, '&gt;')
-            .replace(/\\n/g, '<br/>')
-            .split('')
-            .map((letter) => {
-                if (letter !== '`') {
-                    return letter;
-                }
-                isOpen = !isOpen;
-                if (isOpen) {
-                    return '<code>';
-                }
-                return '</code>';
-            })
-            .join('');
-    }
 }
 
-const build = new Build();
-build.buildIndex();
-build.buildREADME();
+const builder = new Builder();
+builder.buildIndex();
+builder.buildREADME();
+builder.buildSiteTSLintRulesJson();
+builder.buildSiteTSLintMetaJson();
+builder.buildSiteTSLintTestsJson();
