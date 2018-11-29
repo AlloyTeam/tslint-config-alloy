@@ -1,4 +1,9 @@
+.cache
+.gitignore
+.prettierignore
+README.md
 docs
+site/assets
 test/no-internal-module/bad.ts
 test/typedef-whitespace/bad.ts
 test/ban-comma-operator/bad.ts

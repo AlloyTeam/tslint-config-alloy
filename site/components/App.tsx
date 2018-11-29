@@ -14,7 +14,7 @@ export default class App extends React.Component<{}, AppState> {
     public render() {
         return (
             <div>
-                <GitHubCorners href="https://github.com/AlloyTeam/eslint-config-alloy" />
+                <GitHubCorners href="https://github.com/AlloyTeam/tslint-config-alloy" />
                 {this.renderHeader()}
                 <RuleTable onlyShowOff={this.state.onlyShowOff} />
             </div>
