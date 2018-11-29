@@ -5,7 +5,7 @@
     "meta": {
         "category": "functionality",
         "description": "`await` 必须接受 `Promise`",
-        "reason": "promise-function-async 里已经允许 `async` 函数返回值为非 `Promise` 了，故也应该允许 `await` 接受非 `Promise`",
+        "reason": "promise-function-async 里已经允许 `async` 函数返回值为非 `Promise` 了，故也应该允许 `await` 接受非 `Promise`\nRequires Type Info 的规则，无法在编辑器中显示错误，不方便修复",
         "ts-only": true,
         "requires-type-info": true
     }

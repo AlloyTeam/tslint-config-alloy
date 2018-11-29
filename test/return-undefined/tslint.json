@@ -1,10 +1,11 @@
 {
     "rules": {
-        "return-undefined": true
+        "return-undefined": false
     },
     "meta": {
         "category": "style",
         "description": "使用 `return;` 而不是 `return undefined;`",
+        "reason": "没必要限制\nRequires Type Info 的规则，无法在编辑器中显示错误，不方便修复",
         "requires-type-info": true
     }
 }

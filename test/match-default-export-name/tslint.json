@@ -5,7 +5,7 @@
     "meta": {
         "category": "style",
         "description": "`import` 的名称必须和 `export default` 的名称一致",
-        "reason": "没必要限制",
+        "reason": "没必要限制\nRequires Type Info 的规则，无法在编辑器中显示错误，不方便修复",
         "ts-only": true,
         "requires-type-info": true
     }

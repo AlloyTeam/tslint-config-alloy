@@ -272,7 +272,7 @@ npm install --save-dev tslint typescript tslint-config-alloy
             <td>函数返回值为 <code>Promise</code> 时，<strong style="color:#267fd9; font-weight:600;">必须</strong>被处理</td>
         </tr>
         <tr>
-            <td>✅</td>
+            <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-for-in-array/">no-for-in-array</a></td>
             <td><strong style="color:#db5757; font-weight:600;">禁止</strong>对 <code>array</code> 使用 <code>for in</code> 循环</td>
         </tr>
@@ -352,7 +352,7 @@ npm install --save-dev tslint typescript tslint-config-alloy
             <td><strong style="color:#db5757; font-weight:600;">禁止</strong>将 <code>this</code> 赋值给其他变量，除非是解构赋值</td>
         </tr>
         <tr>
-            <td>✅</td>
+            <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-unbound-method/">no-unbound-method</a></td>
             <td>使用实例的方法时，<strong style="color:#267fd9; font-weight:600;">必须</strong> <code>bind</code> 到实例上</td>
         </tr>
@@ -377,7 +377,7 @@ npm install --save-dev tslint typescript tslint-config-alloy
             <td><strong style="color:#db5757; font-weight:600;">禁止</strong>无用的表达式</td>
         </tr>
         <tr>
-            <td>✅</td>
+            <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-use-before-declare/">no-use-before-declare</a></td>
             <td>变量<strong style="color:#267fd9; font-weight:600;">必须</strong>先定义后使用</td>
         </tr>
@@ -417,7 +417,7 @@ npm install --save-dev tslint typescript tslint-config-alloy
             <td>在分支条件判断中<strong style="color:#267fd9; font-weight:600;">必须</strong>传入布尔类型的值</td>
         </tr>
         <tr>
-            <td>✅</td>
+            <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/strict-type-predicates/">strict-type-predicates</a></td>
             <td><strong style="color:#db5757; font-weight:600;">禁止</strong>出现永远为 <code>true</code> 或永远为 <code>false</code> 的条件判断（通过类型预测出一个表达式为 <code>true</code> 还是 <code>false</code>）</td>
         </tr>
@@ -469,7 +469,7 @@ npm install --save-dev tslint typescript tslint-config-alloy
             <td><strong style="color:#db5757; font-weight:600;">禁止</strong>函数的循环复杂度超过 20，详见 https://en.wikipedia.org/wiki/Cyclomatic_complexity</td>
         </tr>
         <tr>
-            <td>✅</td>
+            <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/deprecation/">deprecation</a></td>
             <td><strong style="color:#db5757; font-weight:600;">禁止</strong>使用废弃（被标识了 <code>@deprecated</code>）的 API</td>
         </tr>
@@ -601,9 +601,9 @@ npm install --save-dev tslint typescript tslint-config-alloy
             <td>限制单行注释的规则</td>
         </tr>
         <tr>
-            <td>✅</td>
+            <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/completed-docs/">completed-docs</a></td>
-            <td>类、枚举类型、函数<strong style="color:#267fd9; font-weight:600;">必须</strong>写注释</td>
+            <td>类、函数等<strong style="color:#267fd9; font-weight:600;">必须</strong>写注释</td>
         </tr>
         <tr>
             <td>✅</td>
@@ -776,7 +776,7 @@ npm install --save-dev tslint typescript tslint-config-alloy
             <td><strong style="color:#267fd9; font-weight:600;">必须</strong>使用单引号，jsx 中<strong style="color:#267fd9; font-weight:600;">必须</strong>使用双引号</td>
         </tr>
         <tr>
-            <td>✅</td>
+            <td>❌</td>
             <td><a href="https://palantir.github.io/tslint/rules/return-undefined/">return-undefined</a></td>
             <td>使用 <code>return;</code> 而不是 <code>return undefined;</code></td>
         </tr>

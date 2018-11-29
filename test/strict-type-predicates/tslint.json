@@ -1,10 +1,11 @@
 {
     "rules": {
-        "strict-type-predicates": true
+        "strict-type-predicates": false
     },
     "meta": {
         "category": "functionality",
         "description": "禁止出现永远为 `true` 或永远为 `false` 的条件判断（通过类型预测出一个表达式为 `true` 还是 `false`）",
+        "reason": "没必要限制\nRequires Type Info 的规则，无法在编辑器中显示错误，不方便修复",
         "ts-only": true,
         "requires-type-info": true
     }

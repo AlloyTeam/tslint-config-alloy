@@ -5,7 +5,7 @@
     "meta": {
         "category": "functionality",
         "description": "禁止返回值为 `void` 类型",
-        "reason": "没必要限制，`void` 很常用",
+        "reason": "没必要限制，`void` 很常用\nRequires Type Info 的规则，无法在编辑器中显示错误，不方便修复",
         "requires-type-info": true
     }
 }

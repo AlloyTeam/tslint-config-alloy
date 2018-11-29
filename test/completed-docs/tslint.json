@@ -1,10 +1,11 @@
 {
     "rules": {
-        "completed-docs": [true, "classes", "enums", "functions"]
+        "completed-docs": false
     },
     "meta": {
         "category": "style",
-        "description": "类、枚举类型、函数必须写注释",
+        "description": "类、函数等必须写注释",
+        "reason": "太严格了\nRequires Type Info 的规则，无法在编辑器中显示错误，不方便修复",
         "requires-type-info": true
     }
 }

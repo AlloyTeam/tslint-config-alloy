@@ -4,7 +4,8 @@
     "description": "AlloyTeam TSLint 规则",
     "main": "index.js",
     "scripts": {
-        "build": "ts-node scripts/build",
+        "build": "npm run build:tslint && npm run build:docs",
+        "build:tslint": "ts-node scripts/build",
         "build:docs": "rimraf docs && parcel build site/index.html --out-dir docs --public-url ./",
         "tslint": "tslint --project . ./**/*.ts",
         "test": "mocha -r ts-node/register test/index.ts",

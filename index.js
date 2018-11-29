@@ -214,6 +214,7 @@ module.exports = {
          * @category functionality
          * @description await 必须接受 Promise
          * @reason promise-function-async 里已经允许 async 函数返回值为非 Promise 了，故也应该允许 await 接受非 Promise
+         *         Requires Type Info 的规则，无法在编辑器中显示错误，不方便修复
          * @ts-only 仅支持 ts 文件
          * @requires-type-info 需要提供类型信息
          */
@@ -320,6 +321,7 @@ module.exports = {
          * @category functionality
          * @description 函数返回值为 Promise 时，必须被处理
          * @reason 太严格了
+         *         Requires Type Info 的规则，无法在编辑器中显示错误，不方便修复
          * @ts-only 仅支持 ts 文件
          * @requires-type-info 需要提供类型信息
          */
@@ -327,9 +329,11 @@ module.exports = {
         /**
          * @category functionality
          * @description 禁止对 array 使用 for in 循环
+         * @reason 没必要限制
+         *         Requires Type Info 的规则，无法在编辑器中显示错误，不方便修复
          * @requires-type-info 需要提供类型信息
          */
-        'no-for-in-array': true,
+        'no-for-in-array': false,
         /**
          * @category functionality
          * @description 禁止引入 package.json 中不存在的模块
@@ -338,6 +342,8 @@ module.exports = {
         /**
          * @category functionality
          * @description 禁止推论出的类型是空对象类型
+         * @reason 没必要限制
+         *         Requires Type Info 的规则，无法在编辑器中显示错误，不方便修复
          * @ts-only 仅支持 ts 文件
          * @requires-type-info 需要提供类型信息
          */
@@ -421,10 +427,11 @@ module.exports = {
         /**
          * @category functionality
          * @description 使用实例的方法时，必须 bind 到实例上
+         * @reason Requires Type Info 的规则，无法在编辑器中显示错误，不方便修复
          * @ts-only 仅支持 ts 文件
          * @requires-type-info 需要提供类型信息
          */
-        'no-unbound-method': [true, 'ignore-static'],
+        'no-unbound-method': false,
         /**
          * @category functionality
          * @description 禁止定义没必要的类，比如只有静态方法的类
@@ -435,6 +442,7 @@ module.exports = {
          * @category functionality
          * @description 禁止取用一个类型为 any 的对象的属性
          * @reason 太严格了
+         *         Requires Type Info 的规则，无法在编辑器中显示错误，不方便修复
          * @ts-only 仅支持 ts 文件
          * @requires-type-info 需要提供类型信息
          */
@@ -453,9 +461,11 @@ module.exports = {
         /**
          * @category functionality
          * @description 变量必须先定义后使用
+         * @reason 循环引用没法处理
+         *         Requires Type Info 的规则，无法在编辑器中显示错误，不方便修复
          * @requires-type-info 需要提供类型信息
          */
-        'no-use-before-declare': true,
+        'no-use-before-declare': false,
         /**
          * @category functionality
          * @description 禁止使用 var
@@ -466,6 +476,7 @@ module.exports = {
          * @category functionality
          * @description 禁止返回值为 void 类型
          * @reason 没必要限制，void 很常用
+         *         Requires Type Info 的规则，无法在编辑器中显示错误，不方便修复
          * @requires-type-info 需要提供类型信息
          */
         'no-void-expression': false,
@@ -491,6 +502,7 @@ module.exports = {
          * @category functionality
          * @description 使用加号时，两者必须同为数字或同为字符串
          * @reason 太严格了
+         *         Requires Type Info 的规则，无法在编辑器中显示错误，不方便修复
          * @requires-type-info 需要提供类型信息
          */
         'restrict-plus-operands': false,
@@ -498,6 +510,7 @@ module.exports = {
          * @category functionality
          * @description 在分支条件判断中必须传入布尔类型的值
          * @reason 太严格了
+         *         Requires Type Info 的规则，无法在编辑器中显示错误，不方便修复
          * @ts-only 仅支持 ts 文件
          * @requires-type-info 需要提供类型信息
          */
@@ -505,10 +518,12 @@ module.exports = {
         /**
          * @category functionality
          * @description 禁止出现永远为 true 或永远为 false 的条件判断（通过类型预测出一个表达式为 true 还是 false）
+         * @reason 没必要限制
+         *         Requires Type Info 的规则，无法在编辑器中显示错误，不方便修复
          * @ts-only 仅支持 ts 文件
          * @requires-type-info 需要提供类型信息
          */
-        'strict-type-predicates': true,
+        'strict-type-predicates': false,
         /**
          * @category functionality
          * @description switch 语句必须有 default
@@ -529,6 +544,7 @@ module.exports = {
          * @category functionality
          * @description 传入的类型与默认类型一致时，必须省略传入的类型
          * @reason 没必要限制
+         *         Requires Type Info 的规则，无法在编辑器中显示错误，不方便修复
          * @ts-only 仅支持 ts 文件
          * @requires-type-info 需要提供类型信息
          */
@@ -546,9 +562,11 @@ module.exports = {
         /**
          * @category maintainability
          * @description 禁止使用废弃（被标识了 @deprecated）的 API
+         * @reason 太严格了
+         *         Requires Type Info 的规则，无法在编辑器中显示错误，不方便修复
          * @requires-type-info 需要提供类型信息
          */
-        deprecation: true,
+        deprecation: false,
         /**
          * @category maintainability
          * @description 文件最后一行必须有一个空行
@@ -630,6 +648,7 @@ module.exports = {
          * @category maintainability
          * @description 如果私有变量只在构造函数中被赋值，则必须使用 readonly 修饰符
          * @reason 没必要限制
+         *         Requires Type Info 的规则，无法在编辑器中显示错误，不方便修复
          * @ts-only 仅支持 ts 文件
          * @requires-type-info 需要提供类型信息
          */
@@ -696,10 +715,12 @@ module.exports = {
         'comment-format': [true, 'check-space'],
         /**
          * @category style
-         * @description 类、枚举类型、函数必须写注释
+         * @description 类、函数等必须写注释
+         * @reason 太严格了
+         *         Requires Type Info 的规则，无法在编辑器中显示错误，不方便修复
          * @requires-type-info 需要提供类型信息
          */
-        'completed-docs': [true, 'classes', 'enums', 'functions'],
+        'completed-docs': false,
         /**
          * @category style
          * @description 文件类型必须是 utf-8
@@ -748,6 +769,7 @@ module.exports = {
          * @category style
          * @description import 的名称必须和 export default 的名称一致
          * @reason 没必要限制
+         *         Requires Type Info 的规则，无法在编辑器中显示错误，不方便修复
          * @ts-only 仅支持 ts 文件
          * @requires-type-info 需要提供类型信息
          */
@@ -783,6 +805,7 @@ module.exports = {
          * @category style
          * @description 禁止变量与 true 或 false 比较
          * @reason 没必要限制
+         *         Requires Type Info 的规则，无法在编辑器中显示错误，不方便修复
          * @ts-only 仅支持 ts 文件
          * @has-fixer 支持自动修复
          * @requires-type-info 需要提供类型信息
@@ -843,6 +866,7 @@ module.exports = {
          * @category style
          * @description 在命名空间中，可以直接使用内部变量，不需要添加命名空间前缀
          * @reason 已经禁止使用命名空间了
+         *         Requires Type Info 的规则，无法在编辑器中显示错误，不方便修复
          * @ts-only 仅支持 ts 文件
          * @has-fixer 支持自动修复
          * @requires-type-info 需要提供类型信息
@@ -928,9 +952,11 @@ module.exports = {
         /**
          * @category style
          * @description 使用 return; 而不是 return undefined;
+         * @reason 没必要限制
+         *         Requires Type Info 的规则，无法在编辑器中显示错误，不方便修复
          * @requires-type-info 需要提供类型信息
          */
-        'return-undefined': true,
+        'return-undefined': false,
         /**
          * @category style
          * @description 行尾必须有分号

@@ -5,7 +5,7 @@
     "meta": {
         "category": "style",
         "description": "在命名空间中，可以直接使用内部变量，不需要添加命名空间前缀",
-        "reason": "已经禁止使用命名空间了",
+        "reason": "已经禁止使用命名空间了\nRequires Type Info 的规则，无法在编辑器中显示错误，不方便修复",
         "ts-only": true,
         "has-fixer": true,
         "requires-type-info": true

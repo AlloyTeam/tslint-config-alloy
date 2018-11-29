@@ -5,7 +5,7 @@
     "meta": {
         "category": "functionality",
         "description": "函数返回值为 `Promise` 时，必须被处理",
-        "reason": "太严格了",
+        "reason": "太严格了\nRequires Type Info 的规则，无法在编辑器中显示错误，不方便修复",
         "ts-only": true,
         "requires-type-info": true
     }

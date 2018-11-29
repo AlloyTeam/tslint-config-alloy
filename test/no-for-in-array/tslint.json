@@ -1,10 +1,11 @@
 {
     "rules": {
-        "no-for-in-array": true
+        "no-for-in-array": false
     },
     "meta": {
         "category": "functionality",
         "description": "禁止对 `array` 使用 `for in` 循环",
+        "reason": "没必要限制\nRequires Type Info 的规则，无法在编辑器中显示错误，不方便修复",
         "requires-type-info": true
     }
 }

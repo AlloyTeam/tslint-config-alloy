@@ -5,7 +5,7 @@
     "meta": {
         "category": "functionality",
         "description": "在分支条件判断中必须传入布尔类型的值",
-        "reason": "太严格了",
+        "reason": "太严格了\nRequires Type Info 的规则，无法在编辑器中显示错误，不方便修复",
         "ts-only": true,
         "requires-type-info": true
     }

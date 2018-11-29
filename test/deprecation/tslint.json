@@ -1,10 +1,11 @@
 {
     "rules": {
-        "deprecation": true
+        "deprecation": false
     },
     "meta": {
         "category": "maintainability",
         "description": "禁止使用废弃（被标识了 `@deprecated`）的 API",
+        "reason": "太严格了\nRequires Type Info 的规则，无法在编辑器中显示错误，不方便修复",
         "requires-type-info": true
     }
 }

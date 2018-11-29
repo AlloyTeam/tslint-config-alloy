@@ -1,10 +1,11 @@
 {
     "rules": {
-        "no-unbound-method": [true, "ignore-static"]
+        "no-unbound-method": false
     },
     "meta": {
         "category": "functionality",
         "description": "使用实例的方法时，必须 `bind` 到实例上",
+        "reason": "Requires Type Info 的规则，无法在编辑器中显示错误，不方便修复",
         "ts-only": true,
         "requires-type-info": true
     }

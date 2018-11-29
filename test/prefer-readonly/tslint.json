@@ -5,7 +5,7 @@
     "meta": {
         "category": "maintainability",
         "description": "如果私有变量只在构造函数中被赋值，则必须使用 `readonly` 修饰符",
-        "reason": "没必要限制",
+        "reason": "没必要限制\nRequires Type Info 的规则，无法在编辑器中显示错误，不方便修复",
         "ts-only": true,
         "requires-type-info": true
     }

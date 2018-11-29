@@ -1,10 +1,11 @@
 {
     "rules": {
-        "no-use-before-declare": true
+        "no-use-before-declare": false
     },
     "meta": {
         "category": "functionality",
         "description": "变量必须先定义后使用",
+        "reason": "循环引用没法处理\nRequires Type Info 的规则，无法在编辑器中显示错误，不方便修复",
         "requires-type-info": true
     }
 }

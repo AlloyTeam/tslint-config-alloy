@@ -5,7 +5,7 @@
     "meta": {
         "category": "style",
         "description": "禁止变量与 `true` 或 `false` 比较",
-        "reason": "没必要限制",
+        "reason": "没必要限制\nRequires Type Info 的规则，无法在编辑器中显示错误，不方便修复",
         "ts-only": true,
         "has-fixer": true,
         "requires-type-info": true
