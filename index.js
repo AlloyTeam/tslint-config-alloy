@@ -84,8 +84,8 @@ module.exports = {
         'no-empty-interface': true,
         /**
          * @category typescript-specific
-         * @description 禁止导入立即执行的模块，除了 css, less, sass, scss
-         * @reason 立即执行的模块无法控制其执行过程
+         * @description 禁止导入有副作用（立即执行）的模块，除了 css, less, sass, scss
+         * @reason 有副作用（立即执行）的模块无法控制其执行过程
          */
         'no-import-side-effect': [true, { 'ignore-module': '(\\.css|\\.less|\\.sass|\\.scss)$' }],
         /**

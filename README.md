@@ -77,7 +77,7 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/no-import-side-effect/">no-import-side-effect</a></td>
-            <td><strong style="color:#db5757; font-weight:600;">禁止</strong>导入立即执行的模块，除了 <code>css</code>, <code>less</code>, <code>sass</code>, <code>scss</code></td>
+            <td><strong style="color:#db5757; font-weight:600;">禁止</strong>导入有副作用（立即执行）的模块，除了 <code>css</code>, <code>less</code>, <code>sass</code>, <code>scss</code></td>
         </tr>
         <tr>
             <td>✅</td>

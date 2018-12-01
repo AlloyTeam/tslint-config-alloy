@@ -1,3 +1,4 @@
+// bad 没有指定 private protected 或 public
 class Foo1 {
     static foo = 'foo';
     static getFoo() {
