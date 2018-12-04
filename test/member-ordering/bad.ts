@@ -1,4 +1,4 @@
-// bad 类成员没有正取的排序
+// bad 类成员没有正确的排序
 class Foo2 {
     private getBar3() {
         return this.bar3;

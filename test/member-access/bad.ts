@@ -1,4 +1,4 @@
-// bad 没有指定 private protected 或 public
+// bad 没有设置类成员的可访问性
 class Foo1 {
     static foo = 'foo';
     static getFoo() {

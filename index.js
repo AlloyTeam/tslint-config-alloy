@@ -32,7 +32,7 @@ module.exports = {
         'ban-types': false,
         /**
          * @category typescript-specific
-         * @description 必须指定类的成员的可访问性
+         * @description 必须设置类的成员的可访问性
          * @reason 将不需要公开的成员设为私有的，可以增强代码的可理解性，对文档输出也很友好
          * @ts-only 仅支持 ts 文件
          * @has-fixer 支持自动修复

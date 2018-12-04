@@ -1,4 +1,4 @@
-// bad 类成员排序正确
+// good 类成员排序正确
 class Foo1 {
     public static foo1 = 'foo1';
     protected static foo2 = 'foo2';

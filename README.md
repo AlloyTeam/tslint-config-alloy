@@ -57,7 +57,7 @@ npm install --save-dev tslint typescript tslint-config-alloy
         <tr>
             <td>✅</td>
             <td><a href="https://palantir.github.io/tslint/rules/member-access/">member-access</a></td>
-            <td><strong style="color:#267fd9; font-weight:600;">必须</strong>指定类的成员的可访问性</td>
+            <td><strong style="color:#267fd9; font-weight:600;">必须</strong>设置类的成员的可访问性</td>
         </tr>
         <tr>
             <td>✅</td>
